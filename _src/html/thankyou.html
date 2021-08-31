@@ -1,0 +1,75 @@
+@@include('block/head.html', {title: 'Thank you'})
+@@include('block/header/header-2.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <section class="s-thankyou">
+    <div class="container">
+      <h1 class="title _md _mb_lg">Thank You, Purchase Complete</h1>
+      <div class="main-box">
+        <!-- //////////////////////////////////////////// cart -->
+        <div class="main-box__content">
+
+          <div class="s-thankyou__content-text content-text">
+            <p>Your Purchase was successful.</p>
+            <p>Please <a class="" href="#">Log In</a> to your account to <a class="" href="#">access your purchases</a> or print a receipt in your User Center.</p>
+            <p>If you didn't have an account with test-inside.com before then it was created automatically, password of
+              the account was emailed to.</p>
+            <p>A receipt for this purchase has been emailed to . You can also print a receipt in the Member's
+              Account.</p>
+            <p>Please feel free to email us to check your status. Thanks for your understanding.</p>
+          </div>
+
+
+          <h2 class="title _sm _mb_md">Your Order Summary</h2>
+          <div class="white-box">
+            <div class="table-2">
+              <div class="table-2__row _head _lite-blue">
+                <div class="table-2__cell _h _product">
+                  <span class="title _xs">Your Product List</span>
+                </div>
+                <div class="table-2__cell _h _qty d-md-none">
+                  <span class="title _xs">QTY</span>
+                </div>
+                <div class="table-2__cell _h _price d-md-none">
+                  <span class="title _xs">Price</span>
+                </div>
+              </div><!-- /table-2__row _head -->
+
+              @@for(var i = 0; i < 2; i++) {
+              <div class="table-2__row">
+                <div class="table-2__cell _product">
+                  <span><a class="link" href="#">CompTIA A+ Certification Exam: Core 1</a></span>
+                </div>
+                <div class="table-2__cell _qty d-md-none">
+                  <span><a class="link" href="#">1</a></span>
+                </div>
+                <div class="table-2__cell _price">
+                  <span class="d-none d-md-inline">Price</span> <span>$129</span>
+                </div>
+              </div><!-- /table-2__row -->
+              }
+
+              <div class="table-2__row">
+                <div class="table-2__cell _total">
+                  <span>Total: $129</span>
+                </div>
+              </div><!-- /table-2__row _head -->
+            </div><!-- /table-2 -->
+          </div><!--/white-box-->
+
+
+        </div><!-- /main-box__content -->
+
+        @@include('block/aside-2.html', {class: ''})
+
+      </div><!-- /main-box -->
+    </div><!-- /container -->
+  </section>
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

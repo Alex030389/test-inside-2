@@ -1,0 +1,18 @@
+.nav-user {
+}
+
+.nav-user__list {
+  @extend .list-reset;
+
+  display: flex;
+}
+
+.nav-user__item {
+  &:not(:last-child) {
+    margin-right: 36px;
+  }
+}
+
+.nav-user__link {
+  font-size: 15px;
+}

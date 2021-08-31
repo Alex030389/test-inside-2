@@ -1,0 +1,36 @@
+@@include('block/head.html', {title: 'Result'})
+@@include('block/header/header.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <section class="section">
+    <div class="container">
+      <h1 class="section__title title _md">Search results for "test"</h1>
+      <div class="main-box">
+        <div class="main-box__content result">
+          <ol class="result__list">
+            @@for(var i = 0; i < 10; i++) {
+              <li class="result__item">
+                - <a class="link _blue" href="#">Test Prep</a>
+              </li>
+              <li class="result__item">
+                - <a class="link _blue" href="#">California Basic Educational Skills Test</a>
+              </li>
+              }
+          </ol>
+        </div><!-- /main-box__content -->
+
+        @@include('block/aside.html', {class: ''})
+
+      </div><!-- /main-box -->
+    </div><!-- /container -->
+  </section>
+
+  @@include('block/find-exam.html')
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

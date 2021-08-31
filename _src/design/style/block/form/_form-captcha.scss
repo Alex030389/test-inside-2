@@ -1,0 +1,27 @@
+.form-captcha {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  border-radius: 0 4px 4px 0;
+}
+
+.form-captcha__form-control {
+  flex-grow: 1;
+  flex-basis: 1px;
+
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form-captcha__img {
+  flex-shrink: 0;
+  height: 40px;
+}
+
+.form-captcha__text {
+  width: 100%;
+  padding-top: 6px;
+
+  font-size: 13px;
+}

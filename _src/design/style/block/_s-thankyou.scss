@@ -1,0 +1,13 @@
+.s-thankyou {
+
+}
+
+.s-thankyou__content-text {
+  margin-bottom: 68px;
+  max-width: 960px;
+
+  @media (max-width: $md) {
+    margin-bottom: 50px;
+  }
+}
+

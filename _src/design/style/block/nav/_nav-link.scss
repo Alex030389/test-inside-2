@@ -1,0 +1,14 @@
+.nav-link {
+  color: $c-white;
+
+  transition: .2s;
+
+  &._dark {
+    color: $c-main;
+  }
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+}

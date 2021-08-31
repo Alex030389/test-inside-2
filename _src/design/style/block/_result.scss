@@ -1,0 +1,19 @@
+.result {
+  padding-top: 24px;
+
+  @media (max-width: $md) {
+    padding-top: 10px;
+  }
+}
+
+.result__list {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.result__item {
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}

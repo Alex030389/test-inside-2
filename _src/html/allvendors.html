@@ -1,0 +1,117 @@
+@@include('block/head.html', {title: 'All vendors'})
+@@include('block/header/header.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <!-- //////////////////////////////////////////////// allvendors -->
+  <section class="allvendors">
+    <div class="container">
+      <h1 class="allvendors__title title _md">Testinside IT Certifications</h1>
+      <div class="allvendors__alphabet alphabet">
+        <div class="alphabet__text">Quick search: </div>
+
+        <ul class="alphabet__list">
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">0-9</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">A</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">B</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">C</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">D</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">E</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">F</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">G</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">H</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">I</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">J</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">L</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">M</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">N</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">O</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">P</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">Q</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">R</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">S</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">T</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">U</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">V</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">W</a>
+          </li>
+          <li class="alphabet__item">
+            <a class="alphabet__link" href="#c">Z</a>
+          </li>
+        </ul>
+      </div><!-- /allvendors__alphabet -->
+
+      <ul class="allvendors__list">
+        @@for(var i = 0; i < 20; i++) {
+          <li class="allvendors__item abc">
+            <div class="abc__letter" id="c">A</div>
+            <ul class="abc__list">
+              @@for(var i = 0; i < 15; i++) {
+                <li class="abc__item">
+                  <a class="abc__link link" href="#">ACAMS</a>
+                </li>
+              }
+            </ul>
+          </li>
+        }
+      </ul>
+
+
+
+    </div><!-- /container -->
+  </section>
+
+
+  @@include('block/find-exam.html')
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

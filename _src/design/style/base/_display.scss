@@ -1,0 +1,47 @@
+.d-none {
+  display: none;
+}
+
+@media (max-width: $xl) {
+  .d-xl-block {
+    display: block;
+  }
+
+  .d-xl-none {
+    display: none;
+  }
+}
+
+@media (max-width: $lg) {
+  .d-lg-block {
+    display: block;
+  }
+
+  .d-lg-inline-block {
+    display: inline-block;
+  }
+
+  .d-lg-none {
+    display: none;
+  }
+}
+
+@media (max-width: $md) {
+  .d-md-block {
+    display: block;
+  }
+
+  .d-md-inline {
+    display: inline;
+  }
+
+  .d-md-none {
+    display: none;
+  }
+}
+
+@media (max-width: $sm) {
+  .d-sm-none {
+    display: none;
+  }
+}

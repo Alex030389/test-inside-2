@@ -1,0 +1,15 @@
+.s-testimonials {
+  padding-bottom: 100px;
+
+  @media (max-width: $md) {
+    padding-bottom: 44px;
+  }
+}
+
+.s-testimonials__title {
+  margin-bottom: 72px;
+
+  @media (max-width: $md) {
+    margin-bottom: 37px;
+  }
+}

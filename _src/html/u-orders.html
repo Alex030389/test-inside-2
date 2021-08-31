@@ -1,0 +1,64 @@
+@@include('block/head.html', {title: 'Orders / Invoices'})
+@@include('block/header/header.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <!-- //////////////////////////////////////////////// s-user -->
+  <section class="s-user">
+    <div class="s-user__container container">
+
+      @@include('block/s-user__nav.html')
+
+      <div class="s-user__main">
+        <h1 class="s-user__title title _md">Orders / Invoices</h1>
+        <div class="s-user__inner">
+          <div class="table-2">
+            <div class="table-2__row _head _lite-blue">
+              <div class="table-2__cell _h _order">
+                <span class="title _xs">Invoice / Order&nbsp;#</span>
+              </div>
+              <div class="table-2__cell _h _date d-md-none">
+                <span class="title _xs">Order Date</span>
+              </div>
+              <div class="table-2__cell _h _amount d-md-none">
+                <span class="title _xs">Amount</span>
+              </div>
+              <div class="table-2__cell _h _view d-md-none">
+                <span class="title _xs">View</span>
+              </div>
+              <div class="table-2__cell _h _print d-md-none">
+                <span class="title _xs">Print</span>
+              </div>
+            </div><!-- /table-2__row _head -->
+
+            @@for(var i = 0; i < 10; i++) {
+            <div class="table-2__row">
+              <div class="table-2__cell _order">
+                <span><a class="link _blue" href="#">94879</a></span>
+              </div>
+              <div class="table-2__cell _date">
+                <span>Jul 11,21</span>
+              </div>
+              <div class="table-2__cell _amount">
+                <span>$99.98</span>
+              </div>
+              <div class="table-2__cell _view">
+                <span><a class="link _blue" href="#">View Now</a></span>
+              </div>
+              <div class="table-2__cell _print">
+                <span><a class="link _blue" href="#">Print</a></span>
+              </div>
+            </div><!-- /table-2__row -->
+            }
+          </div><!-- /table-2 -->
+        </div><!--/s-user__inner-->
+      </div><!--/s-user__main-->
+    </div><!--/s-user__container-->
+  </section>
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

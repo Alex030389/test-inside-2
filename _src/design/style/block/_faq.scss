@@ -1,0 +1,16 @@
+.faq {
+}
+
+.faq__title {
+  margin-bottom: 35px;
+}
+
+.faq__accordion {
+  &:not(:last-of-type) {
+    margin-bottom: 108px;
+
+    @media (max-width: $md) {
+      margin-bottom: 50px;
+    }
+  }
+}

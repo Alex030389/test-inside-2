@@ -1,0 +1,72 @@
+.license-form {
+  background-color: $c-white;
+  border: 5px;
+  padding: 32px 6%;
+
+  @media (max-width: $md) {
+    padding: 18px 15px;
+  }
+}
+
+.license-form__title {
+  line-height: 1.87;
+  font-weight: 700;
+  max-width: 764px;
+  margin-bottom: 26px;
+}
+
+.license-form__row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+
+  &._mb_lg {
+    margin-bottom: 32px;
+  }
+}
+
+.license-form__col {
+  width: 47%;
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
+}
+
+.license-form__form-group {
+  margin-bottom: 15px;
+}
+
+.license-form__mandatory-text {
+  font-size: 13px;
+  position: relative;
+  top: 128px;
+
+  span {
+    color: red;
+  }
+
+  @media (max-width: $md) {
+    top: 0;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.license-form__wrap-btn {
+  padding-top: 22px;
+  text-align: right;
+
+  @media (max-width: $md) {
+    text-align: center;
+  }
+}
+
+.license-form__btn {
+  max-width: 365px;
+  padding: 24px 16px;
+}

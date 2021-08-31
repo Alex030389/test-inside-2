@@ -1,0 +1,38 @@
+.list {
+  @extend .list-reset;
+}
+
+.list__item {
+  padding-left: 56px;
+
+  line-height: 1.75;
+
+  background: url(../images/icon/check-dark.svg) 4px center no-repeat;
+
+
+  @media (max-width: $md) {
+    padding-left: 50px;
+
+    background: url(../images/icon/check-dark.svg) 0 center no-repeat;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media (max-width: $md) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &._mb {
+    &_sm {
+      &:not(:last-child) {
+        margin-bottom: 29px;
+
+        @media (max-width: $md) {
+          margin-bottom: 14px;
+        }
+      }
+    }
+  }
+}

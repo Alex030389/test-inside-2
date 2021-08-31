@@ -1,0 +1,29 @@
+.testimonials__swiper-container {
+}
+
+.testimonials__swiper-wrapper {
+  @extend .list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px -104px;
+
+  @media (max-width: $md) {
+    flex-wrap: nowrap;
+    margin: 0 0 45px;
+  }
+}
+
+.testimonials__reviews-card {
+  width: calc(#{$c4} - 20px);
+  margin: 0 10px 104px;
+
+  @media (max-width: $xl) {
+    width: calc(#{$c6} - 20px);
+  }
+
+  @media (max-width: $md) {
+    width: 100%;
+    margin: 0;
+  }
+}

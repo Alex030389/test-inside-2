@@ -1,0 +1,96 @@
+.bundle {
+}
+
+.bundle__head {
+  margin-bottom: 11px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.75;
+
+  @media (max-width: $sm) {
+    margin-bottom: 15px;
+  }
+}
+
+.bundle__foot {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  background-color: #f7f8f9;
+
+  @media (max-width: $sm) {
+    padding: 0;
+
+    background-color: transparent;
+  }
+}
+
+.bundle__box-include-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+    margin-bottom: 16px;
+    padding: 20px;
+
+    background-color: #f7f8f9;
+  }
+}
+
+.bundle__include {
+  margin-right: 20px;
+
+  @media (max-width: $sm) {
+    margin: 0 0 30px;
+  }
+}
+
+.bundle__box-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $sm) {
+    flex-direction: row;
+    align-self: flex-end;
+  }
+}
+
+.bunlde__old-price {
+  margin-bottom: 5px;
+
+  text-decoration: line-through;
+
+  @media (max-width: $sm) {
+    margin: 0 22px 0 0;
+  }
+}
+
+.bunlde__new-price {
+  font-weight: 700;
+  font-size: 22px;
+  color: $c-accent;
+}
+
+.bundle__btn {
+  align-self: flex-end;
+  min-width: 335px;
+
+  @media (max-width: $sl) {
+    width: 100%;
+    min-width: auto;
+  }
+
+  @media (max-width: $md) {
+    align-self: center;
+    max-width: 335px;
+  }
+
+  @media (max-width: $sm) {
+    max-width: 100%;
+  }
+}

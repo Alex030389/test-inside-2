@@ -1,0 +1,46 @@
+.top-c {
+  padding: 96px 0 108px;
+
+  background-color: $c-white;
+
+  @media (max-width: $md) {
+    padding: 57px 0 60px;
+  }
+}
+
+.top-c__box-title-link {
+  position: relative;
+
+  margin-bottom: 42px;
+
+  @media (max-width: $md) {
+    margin-bottom: 20px;
+  }
+}
+
+.top-c__title {
+  margin-bottom: 0;
+}
+
+.top-c__wrap-link {
+  position: absolute;
+  top: 39%;
+  right: 0;
+
+
+  @media (max-width: $lg) {
+    position: relative;
+    top: auto;
+    right: auto;
+
+    padding-top: 34px;
+
+    text-align: center;
+  }
+}
+
+.top-c__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+}

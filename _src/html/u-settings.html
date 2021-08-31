@@ -1,0 +1,65 @@
+@@include('block/head.html', {title: 'Account Setting'})
+@@include('block/header/header.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <!-- //////////////////////////////////////////////// s-user -->
+  <section class="s-user">
+    <div class="s-user__container container">
+
+      @@include('block/s-user__nav.html')
+
+      <div class="s-user__main">
+        <h1 class="s-user__title title _md">Account Setting</h1>
+        <div class="s-user__inner">
+          <form class="s-user__form-settings form-settings" action="#">
+            <div class="form-settings__part">
+              <h2 class="form-settings__title">Email Notification </h2>
+              <div class="form-settings__form-checkbox-group form-checkbox-group">
+                <input class="form-checkbox-group__control visually-hidden" type="checkbox" checked id="checkbox">
+                <label class="form-checkbox-group__label" for="checkbox" data-checkbox-label>Include me on your IT mailing list</label>
+              </div>
+              <div class="form-settings__form-checkbox-group form-checkbox-group">
+                <input class="form-checkbox-group__control visually-hidden" type="checkbox" id="checkbox2">
+                <label class="form-checkbox-group__label" for="checkbox2" data-checkbox-label>I want to be notified when my products have been updated</label>
+              </div>
+              <div class="form-settings__form-checkbox-group form-checkbox-group">
+                <input class="form-checkbox-group__control visually-hidden" type="checkbox" id="checkbox3">
+                <label class="form-checkbox-group__label" for="checkbox3" data-checkbox-label>I want to receive special offers from Test-inside partners</label>
+              </div>
+            </div><!--/form-settings__part-->
+
+            <div class="form-settings__part">
+              <h2 class="form-settings__title">Email Address & Password</h2>
+              <div class="form-settings__form-group form-group">
+                <label class="form-label" for="email">Current Email Address</label>
+                <input class="form-control _gray" id="email" type="text" readonly value="test@gmail.com">
+              </div>
+              <div class="form-settings__form-group form-group">
+                <label class="form-label" for="new-email">New Email Address</label>
+                <input class="form-control _gray" id="new-email" type="text">
+              </div>
+              <div class="form-settings__form-group form-group">
+                <label class="form-label" for="new-passw">New Password</label>
+                <input class="form-control _gray" id="new-passw" type="text">
+              </div>
+              <div class="form-settings__form-group form-group">
+                <label class="form-label" for="conf-new-passw">Confirm Password</label>
+                <input class="form-control _gray" id="conf-new-passw" type="text">
+              </div>
+              <div class="form-settings__wrap-btn">
+                <button class="form-settings__btn btn _primary">Save Setting</button>
+              </div>
+            </div><!--/form-settings__part-->
+          </form>
+        </div><!--/s-user__inner-->
+      </div><!--/s-user__main-->
+    </div><!--/s-user__container-->
+  </section>
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

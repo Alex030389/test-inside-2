@@ -1,0 +1,17 @@
+.s-reviews {
+  padding: 93px 0 25px;
+
+  background-color: $c-white;
+
+  @media (max-width: $md) {
+    padding: 56px 0 43px;
+  }
+}
+
+.s-reviews__title {
+  margin-bottom: 93px;
+
+  @media (max-width: $md) {
+    margin-bottom: 40px;
+  }
+}

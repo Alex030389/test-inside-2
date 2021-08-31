@@ -1,0 +1,15 @@
+.s-sitemap {
+  padding-bottom: 104px;
+
+  @media (max-width: $md) {
+    padding-bottom: 50px;
+  }
+}
+
+.s-sitemap__title {
+  margin-bottom: 40px;
+}
+
+.s-sitemap__subtitle {
+  margin-bottom: 34px;
+}

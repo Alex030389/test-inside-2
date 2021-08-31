@@ -1,0 +1,136 @@
+@@include('block/head.html', {title: 'Products'})
+@@include('block/header/header.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <!-- //////////////////////////////////////////////// s-user -->
+  <section class="s-user">
+    <div class="s-user__container container">
+
+      @@include('block/s-user__nav.html')
+
+      <div class="s-user__main">
+        <h1 class="s-user__title title _md">My Products</h1>
+        <div class="s-user__inner">
+          <!-- ////////////////////////////////////// u-prod -->
+          <ul class="u-prod">
+            <li class="u-prod__card prod-card">
+              <div class="prod-card__head">Current Products</div>
+              <div class="prod-card__body">
+                <div class="prod-card__main">
+                  <p class="prod-card__title">
+                    <span class="prod-card__name">1. ISC SSCP Questions & Answers</span>
+                  </p>
+                  <p class="prod-card__label">Authorization Code:</p>
+                  <button class="prod-card__btn-request btn _lite-blue">Request Code</button>
+                  <p class="prod-card__date">Order Date: <b>Jul 11,21</b></p>
+                  <p class="prod-card__date">Expiration Date: <b>Oct 09,21</b></p>
+                </div><!--/prod-card__main-->
+
+                <div class="prod-card__aside">
+                  <button class="prod-card__btn btn _primary">Download</button>
+                </div><!--/prod-card__aside-->
+              </div><!--/prod-card__body-->
+            </li>
+
+            <li class="u-prod__card prod-card">
+              <div class="prod-card__head">Current Products</div>
+              <div class="prod-card__body">
+                <div class="prod-card__main">
+                  <p class="prod-card__title">
+                    <span class="prod-card__name">2. ISC CISSP Study Guide</span>
+                    <span class="prod-card__invoice" href="#">Invoice #94879</span>
+                  </p>
+                  <p class="prod-card__label">Authorization Code:</p>
+                  <input class="prod-card__form-control form-control _blue-border" id="code" readonly type="text" value="4608-2973-7A67-EEF3">
+
+                  <p class="prod-card__label">Authorization Code:</p>
+                  <input class="prod-card__form-control form-control _gray" id="code-2" type="text">
+
+
+                  <p class="prod-card__date">Order Date: <b>Jul 11,21</b></p>
+                  <p class="prod-card__date">Expiration Date: <b>Oct 09,21</b></p>
+                </div><!--/prod-card__main-->
+
+                <div class="prod-card__aside">
+                  <button class="prod-card__btn _mt_lg btn _primary">Download</button>
+                </div><!--/prod-card__aside-->
+              </div><!--/prod-card__body-->
+            </li>
+
+            <li class="u-prod__card prod-card">
+              <div class="prod-card__head">Current Products</div>
+              <div class="prod-card__body">
+                <div class="prod-card__main">
+                  <p class="prod-card__title">
+                    <span class="prod-card__name">2. ISC CISSP Study Guide</span>
+                    <span class="prod-card__invoice" href="#">Invoice #94879</span>
+                  </p>
+
+                  <div class="prod-card__table-3 table-3">
+                    <div class="table-3__row _head">
+                      <div class="table-3__cell _h _file">
+                        MP3 File
+                      </div>
+                      <div class="table-3__cell _h _quality d-sm-none">
+                        Quality
+                      </div>
+                      <div class="table-3__cell _h _download d-sm-none">
+                        Download
+                      </div>
+                    </div><!--/table-3__row-->
+                    <div class="table-3__row">
+                      <div class="table-3__cell _file">
+                        <a class="link _blue" href="#">CISSP - Section 1</a>
+                      </div>
+                      <div class="table-3__cell _quality">
+                        high
+                      </div>
+                      <div class="table-3__cell _download">
+                        <a class="link _underline" href="#">Download</a>
+                      </div>
+                    </div><!--/table-3__row-->
+                    <div class="table-3__row">
+                      <div class="table-3__cell _file">
+                        <a class="link _blue" href="#">CISSP - Section 1</a>
+                      </div>
+                      <div class="table-3__cell _quality">
+                        high
+                      </div>
+                      <div class="table-3__cell _download">
+                        <a class="link _underline" href="#">Download</a>
+                      </div>
+                    </div><!--/table-3__row-->
+                    <div class="table-3__row">
+                      <div class="table-3__cell _file">
+                        <a class="link _blue" href="#">CISSP - Section 1</a>
+                      </div>
+                      <div class="table-3__cell _quality">
+                        high
+                      </div>
+                      <div class="table-3__cell _download">
+                        <a class="link _underline" href="#">Download</a>
+                      </div>
+                    </div><!--/table-3__row-->
+                  </div><!--/table-3-->
+
+                  <p class="prod-card__date">Order Date: <b>Jul 11,21</b></p>
+                  <p class="prod-card__date">Expiration Date: <b>Oct 09,21</b></p>
+                </div><!--/prod-card__main-->
+
+                <div class="prod-card__aside">
+                </div><!--/prod-card__aside-->
+              </div><!--/prod-card__body-->
+            </li>
+          </ul>
+        </div><!--/s-user__inner-->
+      </div><!--/s-user__main-->
+    </div><!--/s-user__container-->
+  </section>
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

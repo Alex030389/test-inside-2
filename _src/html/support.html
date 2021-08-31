@@ -1,0 +1,147 @@
+@@include('block/head.html', {title: 'Support'})
+@@include('block/header/header-2.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <section>
+    <div class="container">
+      <h1 class="title _md _mb_lg">Shopping Cart Summary</h1>
+      <div class="main-box">
+        <!-- //////////////////////////////////////////// cart -->
+        <div class="main-box__content">
+
+          <div class="white-box _mb_lg">
+            <div class="table-2">
+              <div class="table-2__row _head _lite-blue">
+                <div class="table-2__cell _h _product">
+                  <span class="title _xs">Your Product List</span>
+                </div>
+                <div class="table-2__cell _h _qty d-md-none">
+                  <span class="title _xs">QTY</span>
+                </div>
+                <div class="table-2__cell _h _price d-md-none">
+                  <span class="title _xs">Price</span>
+                </div>
+              </div><!-- /table-2__row _head -->
+
+              @@for(var i = 0; i < 2; i++) {
+              <div class="table-2__row">
+                <div class="table-2__cell _product">
+                  <span><a class="link" href="#">CompTIA A+ Certification Exam: Core 1</a></span>
+                </div>
+                <div class="table-2__cell _qty d-md-none">
+                  <span><a class="link" href="#">1</a></span>
+                </div>
+                <div class="table-2__cell _price">
+                  <span class="d-none d-md-inline">Price</span> <span>$129</span>
+                </div>
+              </div><!-- /table-2__row -->
+              }
+
+              <div class="table-2__row">
+                <div class="table-2__cell _total">
+                  <span>Total: $129</span>
+                </div>
+              </div><!-- /table-2__row _head -->
+            </div><!-- /table-2 -->
+          </div><!--/white-box-->
+
+          <div class="support white-box">
+            <p class="support__desc">We apologize if you are facing any difficulty in making payment. Please provide us some quick information asked in the form below so that we can quickly locate an alternate payment solution for you.</p>
+            <form class="support__form" action="#">
+              <div class="support__part">
+                <p>1. Have you already contacted your bank informing them of you intent to make Online purchase for the amount of $89.99 from
+                  <a class="link _blue" href="#">Test-inside.com</a>?</p>
+                <div class="support__box-yes-no">
+                  <div class="support__form-checkbox-group form-checkbox-group">
+                    <input class="form-checkbox-group__control visually-hidden" name="rad" type="radio"  id="radio1" checked>
+                    <label class="form-checkbox-group__label _lh_lg" for="radio1" data-checkbox-label>Yes</label>
+                  </div>
+                  <div class="support__form-checkbox-group form-checkbox-group">
+                    <input class="form-checkbox-group__control visually-hidden" name="rad" type="radio"  id="radio2">
+                    <label class="form-checkbox-group__label _lh_lg" for="radio2" data-checkbox-label>No</label>
+                  </div>
+                </div>
+              </div><!--/support__part-->
+
+              <div class="support__part">
+                <p>2. What options have you already tried to finalize your purchase and process the payment?</p>
+                <div class="support__form-checkbox-group form-checkbox-group">
+                  <input class="form-checkbox-group__control visually-hidden" type="checkbox"  id="checkbox">
+                  <label class="form-checkbox-group__label _lh_lg" for="checkbox" data-checkbox-label>I have tried making a payment using Paypal. (Option 1)</label>
+                </div>
+                <div class="support__form-checkbox-group form-checkbox-group">
+                  <input class="form-checkbox-group__control visually-hidden" type="checkbox" id="checkbox2">
+                  <label class="form-checkbox-group__label _lh_lg" for="checkbox2" data-checkbox-label>I have tried submitting my information again correctly entering all my credit card payment information. (Option 2)</label>
+                </div>
+                <div class="support__form-checkbox-group form-checkbox-group">
+                  <input class="form-checkbox-group__control visually-hidden" type="checkbox"  id="checkbox3">
+                  <label class="form-checkbox-group__label _lh_lg" for="checkbox3" data-checkbox-label>I have tried making a payment through a Moneybookers. (Option 3)</label>
+                </div>
+              </div><!--/support__part-->
+
+              <div class="support__part">
+                <p>3. Have you tried any of the additional payment methods?</p>
+                <div class="support__form-checkbox-group form-checkbox-group">
+                  <input class="form-checkbox-group__control visually-hidden" type="checkbox"  id="checkbox4">
+                  <label class="form-checkbox-group__label _lh_lg" for="checkbox4" data-checkbox-label>I have tried making a payment using Paypal. (Option 1)</label>
+                </div>
+              </div><!--/support__part-->
+
+              <div class="support__part">
+                <p>4. How would you prefer we contact you?</p>
+                <div class="support__row billing-form__row">
+                  <div class="billing-form__col form-group">
+                    <label class="form-label _required" for="name">Your Name</label>
+                    <input class="form-control _gray" id="name" type="text">
+                  </div>
+                  <div class="billing-form__col form-group">
+                    <label class="form-label _required" for="phone">Phone Number</label>
+                    <input class="form-control _gray" id="phone" type="text">
+                  </div>
+                  <div class="billing-form__col form-group">
+                    <label class="form-label _required" for="email">E-mail</label>
+                    <input class="form-control _gray" id="email" type="text">
+                  </div>
+                  <div class="billing-form__col form-group">
+                    <label class="form-label" for="country">Country</label>
+                    <select class="form-control _gray" id="country" data-selectric>
+                      <option value="1" selected class="form-control__placeholder">Select country</option>
+                      <option value="2">Country 1</option>
+                      <option value="3">Country 2</option>
+                      <option value="4">Country 3</option>
+                      <option value="5">Country 4</option>
+                    </select>
+                  </div>
+                  <div class="billing-form__col form-group">
+                    <label class="form-label _required" for="details">Shopping cart details </label>
+                    <input class="form-control _gray" id="details" type="text">
+                  </div>
+                  <div class="billing-form__col form-group">
+                    <label class="form-label _mb_lg" for="comment">Payment Problems</label>
+                    <textarea class="form-control _gray _textarea" id="comment" rows="4" ></textarea>
+                  </div>
+                  <div class="billing-form__col form-group d-md-none">
+                  </div>
+                  <div class="billing-form__col" style="padding-top: 5px;">
+                    <button class="btn _primary _w-100">Send Request</button>
+                  </div>
+                </div><!--/billing-form__row-->
+              </div><!--/support__part-->
+            </form>
+          </div><!--/white-box-->
+
+        </div><!-- /main-box__content -->
+
+        @@include('block/aside.html', {class: ''})
+
+      </div><!-- /main-box -->
+    </div><!-- /container -->
+  </section>
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

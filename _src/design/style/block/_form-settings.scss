@@ -1,0 +1,43 @@
+.form-settings {
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-settings__part {
+  margin-bottom: 33px;
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-settings__title {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 23px;
+}
+
+.form-settings__form-checkbox-group {
+  margin-bottom: 10px;
+}
+
+.form-settings__form-group {
+  margin-bottom: 17px;
+}
+
+.form-settings__wrap-btn {
+  padding: 15px 0 5px;
+  text-align: right;
+  
+  @media (max-width: $md) {
+    padding: 5px 0 0 ;
+  }
+}
+
+.form-settings__btn {
+  max-width: 229px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}

@@ -1,0 +1,37 @@
+{
+  "author": "AlexKa",
+  "private": true,
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "browser-sync": "^2.26.12",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.2.2",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgmin": "^3.0.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "magnific-popup": "^1.1.0",
+    "object-fit-images": "^3.2.4",
+    "selectric": "^1.13.0",
+    "svg4everybody": "^2.1.9",
+    "swiper": "4.5.1"
+  }
+}

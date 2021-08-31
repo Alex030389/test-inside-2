@@ -1,0 +1,140 @@
+@@include('block/head.html', {title: 'All vendors'})
+@@include('block/header/header.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <!-- //////////////////////////////////////////////// license -->
+  <section class="s-license">
+    <h1 class="visually-hidden">Test-inside license</h1>
+    <div class="container">
+      <div class="s-license__row">
+        <div class="s-license__col license-card">
+          <h2 class="license-card__title">Licensing for Institutes / Corporate</h2>
+          <ul class="license-card__list">
+            <li class="license-card__item">Access Unlimited Test-inside Products</li>
+            <li class="license-card__item">Get highest discounts</li>
+            <li class="license-card__item">3 months, 6 months and 1 Year Testing Engine Access Options</li>
+            <li class="license-card__item">Personalized Customer Support</li>
+          </ul>
+        </div>
+        <div class="s-license__col license-card">
+          <h2 class="license-card__title">Test-inside Reseller Program</h2>
+          <ul class="license-card__list">
+            <li class="license-card__item">Institutes/trainers sell Test-inside Products to students</li>
+            <li class="license-card__item">Earn 25% commission on all Test-inside Sales</li>
+            <li class="license-card__item">Assign Unlimited Products to users anytime</li>
+            <li class="license-card__item">Ensure Guaranteed Success</li>
+          </ul>
+        </div>
+        <div class="s-license__col license-card">
+          <h2 class="license-card__title">Test-inside Affiliate</h2>
+          <ul class="license-card__list">
+            <li class="license-card__item">Simple & Easy for Webmasters</li>
+            <li class="license-card__item">Add link to Test-inside website</li>
+            <li class="license-card__item">Send Traffic to Test-inside</li>
+            <li class="license-card__item">Earn Commission on Sales</li>
+            <li class="license-card__item">Get Paid as you like</li>
+          </ul>
+        </div>
+        <div class="s-license__col license-card">
+          <h2 class="license-card__title">Why Choose Test-inside?</h2>
+          <ul class="license-card__list">
+            <li class="license-card__item">1283 Satisfied Licensors</li>
+            <li class="license-card__item">100% Success Guarantee</li>
+            <li class="license-card__item">Money secured by Refund Policy</li>
+            <li class="license-card__item">Flexible Testing Engine Access</li>
+            <li class="license-card__item">Free Updates</li>
+          </ul>
+          <p class="license__text">There are many ways you can partner with Test-inside and develop new personal revenue streams, promote popular or favorite products, or simply save time and money for your company with licensed solutions.</p>
+          <p class="license__text">Test-inside is more than a provider of certification exam training materials, we can also assist you in developing a preparation plan for your IT professionals on staff. Grow your existing certified team of coworkers into a work force that will elevate your business as they develop.</p>
+        </div>
+
+        <div class="s-license__col _wrap-form">
+          <form class="s-license__form license-form" action="#">
+            <p class="license-form__title">Please fill out your information below and Test-inside Partner Program Manager will get back to you with best solution according to your requirements.</p>
+            <div class="license-form__row _mb_lg">
+              <div class="license-form__col">
+                <div class="license-form__form-group form-group">
+                  <label class="form-label _mb_lg _required" for="name">Contact Name:</label>
+                  <input class="form-control _gray" id="name" type="text">
+                </div>
+                <div class="license-form__form-group form-group">
+                  <label class="form-label _mb_lg _required" for="email">Email Address:</label>
+                  <input class="form-control _gray" id="email" type="text">
+                </div>
+                <div class="license-form__form-group form-group">
+                  <label class="form-label _mb_lg _required" for="country">Country:</label>
+                  <input class="form-control _gray" id="country" type="text">
+                </div>
+              </div>
+
+              <div class="license-form__col">
+                <div class="license-form__form-group form-group">
+                  <label class="form-label _mb_lg" for="company-name">Company Name: </label>
+                  <input class="form-control _gray" id="company-name" type="text">
+                </div>
+                <div class="license-form__form-group form-group">
+                  <label class="form-label _mb_lg" for="site">Web Site URL:</label>
+                  <input class="form-control _gray" id="site" type="text">
+                </div>
+                <div class="license-form__form-group form-group">
+                  <label class="form-label _mb_lg _required" for="phone">Valid Phone Number:</label>
+                  <input class="form-control _gray" id="phone" type="text">
+                </div>
+              </div>
+            </div><!--/license-form__row-->
+
+
+            <p class="license-form__title">Tell us about your requirements:</p>
+            <div class="license-form__row">
+              <div class="license-form__col">
+                <div class="license-form__form-group form-group">
+                  <label class="form-label _mb_lg" for="inf">1. I would like more information on</label>
+                  <select class="form-control _gray" name="vendor" id="inf" data-selectric>
+                    <option value="0" selected class="form-control__placeholder">Test-inside Licensing</option>
+                    <option value="1">text 1</option>
+                    <option value="2">text 2</option>
+                    <option value="3">text 3</option>
+                    <option value="4">text 4</option>
+                    <option value="5">text 5</option>
+                    <option value="5">text 5</option>
+                  </select>
+                </div>
+                <div class="license-form__mandatory-text d-md-none"><span>*</span>represents a mandatory field</div>
+              </div><!--/license-form__col-->
+
+              <div class="license-form__col">
+                <div class="license-form__form-group form-group">
+                  <label class="form-label _mb_lg" for="comment">2. Additional Comments</label>
+                  <textarea class="form-control _gray _textarea" id="comment" rows="4" placeholder="Please, add comments about your requirements regarding test-inside products."></textarea>
+                </div>
+                <div class="license-form__form-group form-group">
+                  <label class="form-label _required" for="captcha">Security Code:</label>
+                  <div class="form-captcha">
+                    <input class="form-captcha__form-control form-control _gray" type="text" id="captcha" name="company">
+                    <img class="form-captcha__img" width="144" height="40" src="./design/images/cards/captcha.png" alt="img">
+                    <div class="form-captcha__text">Please enter security code exactly as shown.</div>
+                  </div>
+                </div>
+                <div class="license-form__mandatory-text d-md-block d-none"><span>*</span>represents a mandatory field</div>
+                <div class="license-form__wrap-btn">
+                  <button class="license-form__btn btn _primary _lg">Submit</button>
+                </div>
+              </div><!--/license-form__col-->
+            </div><!--/license-form__row-->
+          </form>
+        </div>
+
+      </div>
+    </div><!-- /container -->
+  </section>
+
+
+  @@include('block/find-exam.html')
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

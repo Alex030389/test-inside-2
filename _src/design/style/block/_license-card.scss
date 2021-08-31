@@ -1,0 +1,31 @@
+.license-card {
+  border: 1px solid $c-gray;
+  padding: 24px 16px;
+  border-radius: 5px;
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.license-card__title {
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.license-card__list {
+  @media (max-width: $md) {
+    padding-left: 17px;
+  }
+}
+
+.license-card__item {
+
+}
+
+.license__text {
+  font-size: 14px;
+  margin-bottom: 0;
+}

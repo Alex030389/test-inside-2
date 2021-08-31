@@ -1,0 +1,97 @@
+.benefits {
+  overflow-x: hidden;
+
+  background: url(../images/ui/agitation-2.jpg) right top no-repeat;
+  background-size: cover;
+
+  @media (max-width: $sl) {
+    background-position-x: 35%;
+  }
+
+  @media (max-width: $lg) {
+    padding-bottom: 415px;
+
+    background-position: right bottom;
+    background-size: 1000px;
+  }
+
+  @media (max-width: $md) {
+    background-size: 800px;
+  }
+}
+
+.benefits__desc-box {
+  position: relative;
+
+  width: 50%;
+  padding: 170px 40px 181px 0;
+
+  @media (max-width: $sl) {
+    width: 60%;
+  }
+
+  @media (max-width: $lg) {
+    width: 100%;
+  }
+
+  @media (max-width: $md) {
+    padding: 47px 0;
+  }
+
+  & * {
+    position: relative;
+    z-index: 10;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1px;
+
+    width: 2000px;
+    height: 100%;
+
+    background-color: $c-dark-blue;
+
+    @media (max-width: $lg) {
+      right: -200px;
+    }
+  }
+}
+
+.benefits__title {
+  margin-bottom: 33px;
+  padding-left: 85px;
+}
+
+.benefits__list {
+  @extend .list-reset;
+
+  max-width: 670px;
+}
+
+.benefits__item {
+  padding-left: 85px;
+
+  font-size: 20px;
+  line-height: 1.9;
+  color: #fff;
+
+  background: url(../images/icon/check.svg) 12px 8px no-repeat;
+  background-size: 40px;
+
+  @media (max-width: $md) {
+    padding-left: 37px;
+
+    line-height: 1.4;
+
+    background-position: 5px 5px;
+    background-size: 16px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}

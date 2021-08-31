@@ -1,0 +1,43 @@
+<nav class="s-user__nav">
+  <p class="s-user__nav-title d-md-none">User Center</p>
+  <ul class="s-user__menu u-menu d-md-none">
+    <li class="u-menu__item">
+      <a class="u-menu__link _active _products link" href="#">
+        <svg class="u-menu__icon" aria-hidden="true">
+          <use xlink:href="./design/images/symbol/sprite.svg#products"></use>
+        </svg>
+        <span>My Products</span>
+      </a>
+    </li>
+    <li class="u-menu__item">
+      <a class="u-menu__link _order link" href="#">
+        <svg class="u-menu__icon" aria-hidden="true">
+          <use xlink:href="./design/images/symbol/sprite.svg#orders"></use>
+        </svg>
+        <span>Orders / Invoices</span>
+      </a>
+    </li>
+    <li class="u-menu__item">
+      <a class="u-menu__link _settings link" href="#">
+        <svg class="u-menu__icon" aria-hidden="true">
+          <use xlink:href="./design/images/symbol/sprite.svg#settings"></use>
+        </svg>
+        <span>Account Settings</span>
+      </a>
+    </li>
+    <li class="u-menu__item">
+      <a class="u-menu__link link" href="#">
+        <span>Log Out</span>
+      </a>
+    </li>
+  </ul>
+  <div class="s-user__form-group d-none d-md-block">
+    <select class="form-control _sl _dark-gray" onchange="if (this.value) window.location.href = this.value" data-selectric>
+      <option value="0" class="form-control__placeholder" selected>User Center</option>
+      <option value="/products.html">My Products</option>
+      <option value="/orders.html">Orders / Invoices</option>
+      <option value="/account.html">Account Settings</option>
+      <option value="/log-out.html">Log Out</option>
+    </select>
+  </div>
+</nav>

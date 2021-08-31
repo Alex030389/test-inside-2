@@ -1,0 +1,16 @@
+.content-text {
+  line-height: 1.87;
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 31px;
+  }
+
+  a {
+    @extend .link;
+    @extend ._blue;
+  }
+}

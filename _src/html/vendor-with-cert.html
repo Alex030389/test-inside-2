@@ -1,0 +1,52 @@
+@@include('block/head.html', {title: 'Vendor'})
+@@include('block/header/header.html', {_dark: '_dark'})
+
+<main class="main">
+
+  @@include('block/vendor.html')
+
+  <!-- /////////////////////////////////////////////////////// top certifications -->
+  <section class="top-c">
+    <div class="container">
+      <div class="top-c__box-title-link">
+        <h2 class="top-c__title title _md _ta_center">CompTIA Certifications</h2>
+        <div class="top-c__wrap-link d-lg-none">
+          <a class="top-c__link link _blue" href="#">See More</a>
+        </div>
+      </div>
+      <div class="box-c _narrow">
+        <div class="box-c__inner">
+          <a class="box-c__link _c_3" href="#">
+            <div class="box-c__wrap-img">
+              <img class="box-c__img" src="./design/images/vendor-logo/download.png" alt="img">
+            </div>
+            <div class="box-c__title">CompTIA Security+</div>
+          </a>
+          @@for(var i = 0; i < 11; i++) {
+            <a class="box-c__link _c_3" href="#">
+              <div class="box-c__wrap-img">
+                <img class="box-c__img" src="./design/images/vendor-logo/comptia.png" alt="img">
+              </div>
+              <div class="box-c__title">CompTIA Security+</div>
+            </a>
+          }
+        </div><!-- /box-c__inner -->
+      </div><!-- /box-c -->
+      <div class="top-c__wrap-link d-none d-lg-block">
+        <a class="top-c__link link _blue" href="#">See More</a>
+      </div>
+    </div><!-- /container -->
+  </section>
+
+  <!-- /////////////////////////////////////////////////////// all exams -->
+  @@include('block/s-all-exams.html')
+
+  @@include('block/s-reviews.html')
+
+  @@include('block/find-exam.html')
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

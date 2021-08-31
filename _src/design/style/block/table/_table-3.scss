@@ -1,0 +1,69 @@
+.table-3 {
+
+}
+
+.table-3__row {
+  position: relative;
+  display: flex;
+  margin-bottom: 5px;
+
+  &._head {
+    margin-bottom: 17px;
+
+    @media (max-width: $sm) {
+      margin-bottom: 8px;
+    }
+  }
+
+  @media (max-width: $sm) {
+    flex-wrap: wrap;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.table-3__cell {
+  font-size: 13px;
+
+  &._h {
+    font-weight: 700;
+
+    &._download {
+      font-weight: 700;
+    }
+  }
+
+  &._file {
+    width: 170px;
+
+    @media (max-width: $sm) {
+      width: 70%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &._quality {
+    flex-grow: 1;
+
+    @media (max-width: $sm) {
+      width: 30%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &._download {
+    position: absolute;
+    left: calc(100% + 30px);
+    font-weight: 500;
+
+    @media (max-width: $md) {
+      position: static;
+    }
+
+    @media (max-width: $sm) {
+      width: 100%;
+    }
+  }
+}

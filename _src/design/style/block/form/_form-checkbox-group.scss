@@ -1,0 +1,45 @@
+.form-checkbox-group {
+}
+
+.form-checkbox-group__control {
+}
+
+.form-checkbox-group__label {
+  position: relative;
+
+  padding-left: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    z-index: 1;
+
+    width: 18px;
+    height: 18px;
+
+    border: 1px solid $c-accent;
+    border-radius: 3px;
+
+    .form-checkbox-group__control:focus + & {
+      //border-color: $c-accent;
+      box-shadow: 0 0 0 1px $c-accent;
+    }
+
+    .form-checkbox-group__control:checked + & {
+      background: url(../images/icon/checkbox.svg) center center no-repeat;
+      //border-color: $c-accent;
+    }
+  }
+
+  &._lh {
+    &_lg {
+    line-height: 1.87;
+
+      &::before {
+        top: 5px !important;
+      }
+    }
+  }
+}

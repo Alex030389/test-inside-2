@@ -1,0 +1,56 @@
+.billing-form {
+  padding-right: 103px;
+
+  @media (max-width: $xl) {
+    padding-right: 40px;
+  }
+}
+
+.billing-form__title {
+  margin-bottom: 45px;
+}
+
+.billing-form__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -21px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 55px;
+  }
+}
+
+.billing-form__col {
+  width: 46%;
+  margin-bottom: 21px;
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
+
+  &._empty {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+
+  &._text {
+    padding-top: 12px;
+    line-height: 1.87;
+
+    @media (max-width: $md) {
+      order: 1;
+      padding-top: 4px;
+    }
+  }
+
+  &._btn {
+    padding-top: 40px;
+
+    @media (max-width: $md) {
+      padding-top: 16px;
+    }
+  }
+}
+

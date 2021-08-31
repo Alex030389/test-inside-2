@@ -1,0 +1,50 @@
+.box-v {
+  max-width: 1046px;
+  margin: 0 auto;
+}
+
+.box-v__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px -20px;
+}
+
+.box-v__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(25% - 20px);
+  height: 189px;
+  margin: 0 10px 20px;
+  padding: 16px;
+
+  border: 1px solid $c-gray;
+  border-radius: 24px;
+
+  transition: .2s;
+
+  @media (max-width: $lg) {
+    width: calc(33.333333% - 20px);
+  }
+
+  @media (max-width: $md) {
+    width: calc(50% - 20px);
+  }
+
+  @media (max-width: $sm) {
+    height: 119px;
+
+    border-radius: 14px;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    background-color: #fff;
+    box-shadow: 0 25px 50px rgba(8, 18, 44, .16);
+  }
+}
+
+.box-v__img {
+  max-height: 100%;
+}

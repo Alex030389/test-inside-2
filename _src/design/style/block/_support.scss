@@ -1,0 +1,52 @@
+.support {
+  padding: 37px 30px 37px;
+  line-height: 1.87;
+
+  @media (max-width: $md) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.support__desc {
+  margin-bottom: 34px;
+
+  @media (max-width: $md) {
+    margin-bottom: 20px;
+  }
+}
+
+.support__form {
+
+}
+
+.support__part {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+
+    @media (max-width: $md) {
+      margin-bottom: 16px;
+    }
+  }
+
+  p {
+    margin-bottom: 14px;
+  }
+
+  .form-checkbox-group__label {
+    padding-left: 30px;
+  }
+}
+
+.support__box-yes-no {
+  display: flex;
+
+  .support__form-checkbox-group:first-child {
+    margin-right: 60px;
+  }
+}
+
+.support__row {
+  max-width: 914px;
+}
+

@@ -1,0 +1,15 @@
+.white-box {
+  padding: 30px 40px;
+  background-color: $c-white;
+  border-radius: 5px;
+
+  @media (max-width: $md) {
+    padding: 30px 15px;
+  }
+
+  &._mb {
+    &_lg {
+      margin-bottom: 40px;
+    }
+  }
+}

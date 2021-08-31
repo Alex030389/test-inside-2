@@ -1,0 +1,37 @@
+.link {
+  color: $c-main;
+
+  background-image: linear-gradient(to right, transparent, transparent);
+  background-repeat: repeat-x;
+  background-position: left 1.05em;
+  background-size: 1px 1px;
+
+  transition: .2s;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+
+    background-image: linear-gradient(to right, rgba($c-accent, .5), rgba($c-accent, .5));
+  }
+
+  &._blue {
+    color: $c-accent;
+
+    background-image: linear-gradient(to right, rgba($c-accent, .5), rgba($c-accent, .1));
+
+    &:hover {
+      color: #1877ba;
+
+      background-image: linear-gradient(to right, rgba(#1877ba, .5), rgba(#1877ba, .5));
+    }
+  }
+
+  &._underline {
+    background-image: linear-gradient(to right, rgba($c-main, .5), rgba($c-main, .5));
+
+    &:hover {
+      background-image: linear-gradient(to right, rgba($c-accent, .5), rgba($c-accent, .5));
+    }
+  }
+}

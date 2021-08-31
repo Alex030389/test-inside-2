@@ -1,0 +1,73 @@
+@@include('block/head.html', {title: 'Exam'})
+@@include('block/header/header.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <!-- /////////////////////////////////////////// prod -->
+  <section class="s-prod">
+    <div class="container">
+      <h1 class="s-prod__title title _md">CompTIA SY0-501 Exam Questions & Answers</h1>
+      <form class="s-prod__form" action="#">
+        <div class="s-prod__main">
+          <div class="s-prod__prod prod">
+            <div class="prod__wrap-img">
+              <img class="prod__img" src="./design/images/course/q-a.png" alt="img">
+            </div>
+            <div class="prod__desc">
+              <div class="prod__about">
+                <p><b>Exam Code:</b> SY0-501</p>
+                <p><b>Exam Name:</b> CompTIA Security+</p>
+                <p><b>Certification Provider:</b> CompTIA</p>
+                <p><b># Of Questions:</b> 725</p>
+                <p><b>Last Update:</b> Sep 29, 2020</p>
+              </div>
+              <div class="prod__box-price-btn">
+                <div class="prod__price d-none d-lg-block">
+                  $98.88 USD
+                </div>
+                <button class="prod__btn btn _primary d-none d-lg-inline-block">Buy Now</button>
+                <button class="prod__btn btn _lite-blue">Try Demo Free</button>
+              </div>
+            </div>
+          </div><!--/prod-->
+
+          <ul class="s-prod__list list">
+            <li class="list__item _mb_sm">Real CompTIA Security+ questions with answers</li>
+            <li class="list__item _mb_sm">Instant CompTIA SY0-501 download</li>
+            <li class="list__item _mb_sm">Updated frequently - free SY0-501 updates for 90 days</li>
+            <li class="list__item _mb_sm">24/7 customer support by Testinside Team</li>
+            <li class="list__item _mb_sm">100% success guarantee or your money back</li>
+            <li class="list__item _mb_sm">Install on multiple computers for self-paced, at-your-convenience training</li>
+            <li class="list__item _mb_sm">Real CompTIA Security+ exam environment simulation</li>
+            <li class=""><b>Got Questions?</b> <a href="#" class="link _blue">Read Testinside FAQ</a></li>
+          </ul>
+        </div><!--/s-prod__main-->
+
+        <div class="s-prod__sidebox d-lg-none">
+          <div class="purchase">
+            <h2 class="purchase__title title _md">Purchase Options</h2>
+            <div class="purchase__price">
+              <span class="purchase__old-price">
+                Was $98.88 USD
+              </span>
+              <span class="purchase__new-price">
+                Today $98.88 USD
+              </span>
+            </div><!-- purchase__price -->
+            <button class="purchase__btn btn _primary">Buy Now</button>
+          </div><!-- /purchase -->
+        </div>
+      </form><!--/s-prod__inner-->
+    </div><!--/container-->
+  </section>
+
+  @@include('block/s-reviews.html')
+
+  @@include('block/find-exam.html')
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

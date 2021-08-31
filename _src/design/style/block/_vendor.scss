@@ -1,0 +1,38 @@
+.vendor {
+  padding: 104px 0;
+
+  @media (max-width: $md) {
+    padding: 85px 0;
+  }
+}
+
+.vendor__container {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
+}
+
+.vendor__wrap-img {
+  max-width: 379px;
+  margin-right: 18%;
+
+  @media (max-width: $sl) {
+    margin-right: 8%;
+  }
+
+  @media (max-width: $lg) {
+    margin: 0 0 70px;
+  }
+}
+
+.vendor__img {
+}
+
+.vendor__title {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 0;
+}

@@ -1,0 +1,101 @@
+@@include('block/head.html', {title: 'Pay now'})
+@@include('block/header/header-2.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <section>
+    <div class="container">
+      <h1 class="title _md _mb_lg">Review Your Order</h1>
+      <div class="main-box">
+        <!-- //////////////////////////////////////////// cart -->
+        <div class="main-box__content">
+
+          <div class="white-box _mb_lg">
+            <div class="table-2">
+              <div class="table-2__row _head _lite-blue">
+                <div class="table-2__cell _h _product">
+                  <span class="title _xs">Your Product List</span>
+                </div>
+                <div class="table-2__cell _h _qty d-md-none">
+                  <span class="title _xs">QTY</span>
+                </div>
+                <div class="table-2__cell _h _price d-md-none">
+                  <span class="title _xs">Price</span>
+                </div>
+              </div><!-- /table-2__row _head -->
+
+              @@for(var i = 0; i < 2; i++) {
+              <div class="table-2__row">
+                <div class="table-2__cell _product">
+                  <span><a class="link" href="#">CompTIA A+ Certification Exam: Core 1</a></span>
+                </div>
+                <div class="table-2__cell _qty d-md-none">
+                  <span><a class="link" href="#">1</a></span>
+                </div>
+                <div class="table-2__cell _price">
+                  <span class="d-none d-md-inline">Price</span> <span>$129</span>
+                </div>
+              </div><!-- /table-2__row -->
+              }
+
+              <div class="table-2__row">
+                <div class="table-2__cell _total">
+                  <span>Total: $129</span>
+                </div>
+              </div><!-- /table-2__row _head -->
+            </div><!-- /table-2 -->
+          </div><!--/white-box-->
+
+          <div class="step">
+            <h2 class="step__title title _sm">Step 1</h2>
+            <p class="step__text">It is very important that you contact your bank to inform them that you are planning to make an online
+              purchase from "Training Solutions Ltd" for $89.99, before trying any of the following options. Asking your
+              bank to authorize your next transaction, with a simple phone call, typically resolves any online purchase
+              problems. Please also ensure you are entering all of your details in correctly, before submitting. </p>
+          </div>
+
+          <div class="step">
+            <h2 class="step__title title _sm">Step 2</h2>
+            <p class="step__subtitle">Credit and Debit Card Options</p>
+
+            <div class="step__white-box white-box">
+              <p class="step__option"><b>Option 1</b></p>
+              <p class="step__text">Try your Card through a Secondary Bank. You will be redirected to Secondary Bank page for making the
+                payment and then returned here to receive/download your products. This option is only valid for Visa,
+                Mastercard and American Express cards. </p>
+              <div class="step__wrap-btn">
+                <button class="step__btn btn _primary">Pay Now</button>
+              </div>
+              <div class="step__wrap-img _mb_lg">
+                <img class="step__img" src="./design/images/cards/cards-3.svg" width="167" height="32" alt="img">
+              </div>
+
+              <p class="step__text">Note: The charges on your Credit/Debit Card Statement will appear as paid to 'Learning Tools' - our
+                partner in accepting payments.</p>
+            </div>
+
+            <div class="step__white-box white-box">
+              <p class="step__option"><b>Option 2</b></p>
+              <p class="step__text"><b>Go to Payment Page and try your CC details again</b>. Since you have informed the bank it should
+                work fine. You can pay using the following credit or debit cards: Visa, Mastercard, Diners Club,
+                American Express, Maestro and JCB cards.</p>
+              <div class="step__wrap-img">
+                <img class="step__img" src="./design/images/cards/cards-6.svg" width="341" height="42" alt="img">
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /main-box__content -->
+
+        @@include('block/aside.html', {class: ''})
+
+      </div><!-- /main-box -->
+    </div><!-- /container -->
+  </section>
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

@@ -1,0 +1,78 @@
+@@include('block/head.html', {title: 'Demo'})
+@@include('block/header/header.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <!-- /////////////////////////////////////////// prod -->
+  <section class="s-prod _sm_pb-0">
+    <div class="container">
+      <h1 class="s-prod__title title _md">Try our material</h1>
+      <div class="s-prod__form">
+        <div class="s-prod__main">
+          <div class="s-prod__prod demo">
+            <div class="demo__wrap-img">
+              <img class="demo__img" src="./design/images/course/demo.png" alt="img">
+            </div>
+            <div class="demo__desc">
+              <h3 class="demo__title">Get a free sample of any exam Questions and Answers on the web site</h3>
+              <ul class="demo__list list">
+                <li class="list__item">Exam Engine with customizable criteria</li>
+                <li class="list__item">Score comparison and improvement check</li>
+                <li class="list__item">Immediate Download after Payment</li>
+                <li class="list__item">Tested and verified malware-free software.</li>
+              </ul>
+            </div><!--/prod__desc-->
+          </div><!--/prod-->
+        </div><!--/s-prod__main-->
+
+        <div class="s-prod__sidebox">
+          <form class="form-demo" action="#">
+            <h3 class="form-demo__title title _md _white">Choose an exam to sample:</h3>
+            <div class="form-demo__form-group form-group">
+              <select class="form-control _lg _lite" name="vendor" id="vendor" data-selectric>
+                <option value="0" selected class="form-control__placeholder">Select a vendor</option>
+                <option value="1">text 1</option>
+                <option value="2">text 2</option>
+                <option value="3">text 3</option>
+                <option value="4">text 4</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+              </select>
+            </div><!-- /find-exam__form-group -->
+            <div class="form-demo__form-group form-group">
+              <select class="form-control _lg _lite" name="exam" id="exam" data-selectric>
+                <option value="0" selected class="form-control__placeholder">Select an exam</option>
+                <option value="1">text 1</option>
+                <option value="2">text 2</option>
+                <option value="3">text 3</option>
+                <option value="4">text 4</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+              </select>
+            </div><!-- /find-exam__form-group -->
+            <div class="form-demo__form-group form-group">
+              <input class="form-control _lg _lite" placeholder="Enter your email address" type="text">
+            </div>
+            <button class="form-demo__btn btn _primary">Download Demo</button>
+          </form>
+        </div><!--/s-prod__sidebox-->
+      </div><!--/s-prod__inner-->
+    </div><!--/container-->
+  </section>
+
+  @@include('block/s-reviews.html')
+
+  @@include('block/find-exam.html')
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

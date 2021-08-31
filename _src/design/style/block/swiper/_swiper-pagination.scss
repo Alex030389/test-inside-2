@@ -1,0 +1,14 @@
+.swiper-pagination {
+}
+
+.swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  margin: 0 5px !important;
+
+  border-radius: 50%;
+}
+
+.wiper-pagination-bullet-active {
+  background-color: $c-accent;
+}

@@ -1,0 +1,90 @@
+.all-exams {
+  margin: 0 auto;
+  overflow: hidden;
+
+  border: 1px solid $c-gray;
+  border-radius: 5px;
+
+  @media (max-width: $md) {
+    border-color: #e6e8eb;
+  }
+
+  &._narrow {
+    max-width: 1314px;
+  }
+}
+
+.all-exams__title {
+  margin: -1px -1px 5px;
+  padding: 26px 50px;
+
+  background-color: $c-dark-blue;
+
+  @media (max-width: $md) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.all-exams__list {
+  @extend .list-reset;
+
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+  padding: 0 22px;
+
+  @media (max-width: $md) {
+    padding: 0 6px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 8px;
+
+    background-color: #f7f8f9;
+  }
+}
+
+.all-exams__item {
+  width: $c2;
+  padding: 19px 27px 20px;
+
+  border-bottom: 1px solid $c-gray;
+
+  @media (max-width: $sl) {
+    width: $c2-5;
+  }
+
+  @media (max-width: $xl) {
+    width: $c3;
+  }
+
+  @media (max-width: $lg) {
+    width: $c4;
+  }
+
+  @media (max-width: $md) {
+    width: $c6;
+    padding-right: 14px;
+    padding-left: 14px;
+
+    border-bottom-color: #e6e8eb;
+  }
+
+  @media (max-width: $ss) {
+    width: 100%;
+  }
+}
+
+.all-exams__link {
+  font-weight: 500;
+  font-size: 15px;
+}

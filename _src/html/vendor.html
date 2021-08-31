@@ -1,0 +1,48 @@
+@@include('block/head.html', {title: 'Vendor'})
+@@include('block/header/header.html', {_dark: '_dark'})
+
+<main class="main">
+
+  @@include('block/vendor.html')
+
+  <!-- /////////////////////////////////////////////////////// all exams -->
+  <section class="section-2">
+    <div class="container">
+      <div class="table-2 _narrow">
+        <div class="table-2__row _head">
+          <div class="table-2__cell _h">
+            <h2 class="title _xs _mb_0">All CompTIA Exams</h2>
+          </div>
+        </div><!-- /table-2__row _head -->
+
+        @@for(var i = 0; i < 10; i++) {
+          <div class="table-2__row">
+            <div class="table-2__cell _code">
+              <p class="table-2__name">Exam Code:</p>
+              <a class="link" href="#">220-1001</a>
+            </div>
+            <div class="table-2__cell _name">
+              <p class="table-2__name">Exam Name:</p>
+              <a class="link" href="#">CompTIA A+ Certification Exam: Core 1</a>
+            </div>
+          </div><!-- /table-2__row -->
+        }
+
+        <div class="table-2__row _foot">
+          <div class="table-2__cell _f">
+            <a class="link _blue" href="#">View All</a>
+          </div>
+        </div><!-- /table-2__row _foot -->
+      </div><!-- /table-2 -->
+    </div><!-- /container -->
+  </section>
+
+  @@include('block/s-reviews.html')
+
+  @@include('block/find-exam.html')
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

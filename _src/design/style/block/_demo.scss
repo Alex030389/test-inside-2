@@ -1,0 +1,45 @@
+.demo {
+  padding: 78px 10px 50px;
+  align-items: flex-start;
+
+
+  @media (max-width: $md) {
+    padding: 10px 15px 35px;
+  }
+}
+
+$w-demo-wrap-img: 51%;
+
+.demo__wrap-img {
+  position: relative;
+  top: -4px;
+  padding-right: 10px;
+  width: $w-demo-wrap-img;
+
+  @media (max-width: $md) {
+    width: 100%;
+    padding-right: 0;
+    top: 0;
+  }
+}
+
+.demo__img {
+
+}
+
+.demo__desc {
+  width: 100% - $w-demo-wrap-img;
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
+}
+
+.demo__title {
+  margin-bottom: 43px;
+  max-width: 440px;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.27;
+}

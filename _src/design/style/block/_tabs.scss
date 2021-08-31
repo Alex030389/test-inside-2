@@ -1,0 +1,56 @@
+.tabs {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.tabs__box-btn {
+  margin-bottom: 56px;
+
+  text-align: center;
+
+  @media (max-width: $md) {
+    margin-bottom: 40px;
+  }
+}
+
+.tabs__btn {
+  @extend .btn-reset;
+
+  font-size: 30px;
+  line-height: 1;
+
+  border-bottom: 1px solid transparent;
+
+  @media (max-width: $md) {
+    font-size: 20px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 55px;
+
+    @media (max-width: $md) {
+      margin-right: 40px;
+    }
+
+    @media (max-width: $ss) {
+      margin-right: 10px;
+    }
+  }
+
+  &._active {
+    font-weight: 700;
+
+    border-color: $c-main;
+  }
+}
+
+.tabs__box-content {
+}
+
+.tabs__content {
+  display: none;
+
+  &._active {
+    display: block;
+  }
+}

@@ -1,0 +1,59 @@
+.alphabet {
+  display: flex;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+}
+
+.alphabet__text {
+  margin-right: 21px;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.27;
+  white-space: nowrap;
+
+  @media (max-width: $md) {
+    margin-bottom: 30px;
+
+    font-size: 20px;
+  }
+}
+
+.alphabet__list {
+  @extend .list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -3px -20px;
+}
+
+.alphabet__item {
+  margin: 0 3px 20px;
+}
+
+.alphabet__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 37px;
+
+  font-weight: 700;
+  font-size: 15px;
+  color: $c-dark-blue;
+
+  border: 1px solid $c-dark-blue;
+  border-radius: 5px;
+
+  transition: .2s;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+
+    background-color: $c-accent;
+    border-color: $c-accent;
+  }
+}

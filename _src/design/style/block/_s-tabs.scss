@@ -1,0 +1,9 @@
+.s-tabs {
+  padding-top: 108px;
+  padding-bottom: 105px;
+
+  @media (max-width: $md) {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+}

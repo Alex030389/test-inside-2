@@ -1,0 +1,45 @@
+.page-404 {
+}
+
+.page-404__inner {
+  padding-top: 328px;
+  padding-bottom: 150px;
+
+  @media (max-width: $lg) {
+    padding-top: 220px;
+  }
+
+  @media (max-width: $md) {
+    padding-top: 180px;
+  }
+
+  @media (max-width: $ss) {
+    padding-top: 160px;
+  }
+}
+
+.page-404__title {
+  width: 100%;
+  max-width: 780px;
+  margin-bottom: 40px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 20px;
+  }
+}
+
+.page-404__desc {
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  color: $c-white;
+
+  p {
+    margin-bottom: 24px;
+
+    @media (max-width: $ss) {
+      margin-bottom: 16px;
+    }
+  }
+}

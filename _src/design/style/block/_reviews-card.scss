@@ -1,0 +1,28 @@
+.reviews-card__item {
+}
+
+.reviews-card__wrap-img {
+  width: 88px;
+  height: 88px;
+  margin-bottom: 12px;
+  overflow: hidden;
+
+  border-radius: 50%;
+}
+
+.reviews-card__img {
+}
+
+.reviews-card__rating-list {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.reviews-card__rating-img {
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+}
+
+.reviews-card__text {
+}

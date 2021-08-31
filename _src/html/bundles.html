@@ -1,0 +1,50 @@
+@@include('block/head.html', {title: 'Bundles'})
+@@include('block/header/header.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <section class="section">
+    <div class="container">
+      <h1 class="section__title title _md">Certification Bundles</h1>
+      <div class="main-box">
+        <div class="main-box__content bundles">
+            @@for(var i = 0; i < 2; i++) {
+              <h2 class="bundles__title title _sm">Comptia</h2>
+              <ul class="bundles__list">
+                @@for(var i = 0; i < 6; i++) {
+                  <li class="bundles__item bundle">
+                    <p class="bundle__head">
+                      <a class="link _blue" href="#">CompTIA CASP</a> - (CompTIA Exams: <a class="link _blue" href="#">CAS-003</a> )<br>
+                      (1 products total)
+                    </p>
+                    <div class="bundle__foot">
+                      <div class="bundle__box-include-price">
+                        <div class="bundle__include">Bundle includes all 1 Exams</div>
+                        <div class="bundle__box-price">
+                          <span class="bunlde__old-price">$151.99</span>
+                          <span class="bunlde__new-price">$131.99</span>
+                        </div>
+                      </div>
+
+                      <button class="bundle__btn btn _primary"><span>Buy Now</span></button>
+                    </div><!-- /bundle__foot -->
+                  </li>
+                }
+              </ul>
+            }
+        </div><!-- /main-box__content -->
+
+        @@include('block/aside.html', {class: '_pt_lg'})
+
+      </div><!-- /main-box -->
+    </div><!-- /container -->
+  </section>
+
+  @@include('block/find-exam.html')
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

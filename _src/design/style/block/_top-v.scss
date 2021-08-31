@@ -1,0 +1,21 @@
+.top-v {
+  padding: 95px 0 106px;
+
+  @media (max-width: $md) {
+    padding: 47px 0 50px;
+  }
+}
+
+.top-v__title {
+  margin-bottom: 40px;
+}
+
+.top-v__wrap-btn {
+  padding-top: 50px;
+
+  text-align: center;
+
+  @media (max-width: $md) {
+    padding-top: 26px;
+  }
+}

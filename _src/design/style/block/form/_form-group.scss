@@ -1,0 +1,19 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  &._cvv {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 18px;
+      width: 38px;
+      height: 24px;
+      background: url("../images/cards/cvv.svg") no-repeat center center;
+      background-size: 100%;
+    }
+  }
+}

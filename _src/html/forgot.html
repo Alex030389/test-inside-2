@@ -1,0 +1,35 @@
+@@include('block/head.html', {title: 'Forgot'})
+@@include('block/header/header.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <!-- ////////////////////////////////////////// register -->
+  <section class="s-register">
+    <div class="container">
+      <h1 class="visually-hidden">Register or login to account</h1>
+        <div class="s-register__box-form _single">
+          <form class="s-register__form _single _active register" action="#">
+            <h2 class="register__title title _sm">Forgot Your Password?</h2>
+            <p class="register__subtitle _mb_lg">Enter the e-mail address associated with your account. Click submit to have your password e-mailed to you:</p>
+            <div class="register__form-group _mb_lg form-group">
+              <label class="form-label _mb_lg" for="email">E-mail address: </label>
+              <input class="form-control _gray" id="email" type="text">
+            </div>
+            <div class="register__wrap-btn">
+              <button class="register__btn btn _primary">Sing Up Now</button>
+            </div>
+            <div class="register__note">
+              <p>NOTE: To make sure that you can receive a reply from ActualTests, add the "test-inside.com" domain to your e-mail "safe list" or add email address support@test-inside.com to your address book.</p>
+              <p>If you do not receive a response in your "inbox" within 5 minutes, check your "bulk mail" or "junk mail" folders.</p>
+            </div>
+          </form><!-- /s-register__form -->
+        </div><!-- /s-register__box-form -->
+    </div><!-- /container -->
+  </section>
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

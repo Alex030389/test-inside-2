@@ -1,0 +1,43 @@
+.bundles {
+}
+
+.bundles__title {
+  margin-bottom: 36px;
+
+  @media (max-width: $md) {
+    margin-bottom: 30px;
+  }
+}
+
+.bundles__list {
+  @extend .list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+
+  background-color: $c-white;
+  border-radius: 5px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 39px;
+  }
+
+  @media (max-width: $sm) {
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-top: 22px;
+
+    border-radius: 0;
+  }
+}
+
+.bundles__item {
+  width: calc(50% - 40px);
+  margin: 0 20px 30px;
+
+  @media (max-width: $md) {
+    width: 100%;
+    margin: 0 15px 34px;
+  }
+}

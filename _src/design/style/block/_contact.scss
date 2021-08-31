@@ -1,0 +1,22 @@
+.contact {
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  line-height: 1.87;
+
+  p {
+    padding-top: 2px;
+    margin-bottom: 34px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+}
+
+.contact__title {
+  margin-bottom: 30px;
+}

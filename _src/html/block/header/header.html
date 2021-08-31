@@ -1,0 +1,101 @@
+<header class="header">
+  <div class="container">
+    <div class="header__top-line">
+      <a class="header__logo-link" href="#">
+        <img src="./design/images/logo/logo.svg" alt="img" width="186" height="61">
+      </a>
+      <button class="header__btn-open-search @@_dark box-icon" aria-label="button open search input">
+        <svg aria-hidden="true">
+          <use xlink:href="./design/images/symbol/sprite.svg#search"></use>
+        </svg>
+      </button>
+
+      <nav class="header__nav-user nav-user">
+        <ul class="nav-user__list">
+          <li class="nav-user__item">
+            <a class="nav-user__link nav-link @@_dark" href="#">Log In | Register</a>
+          </li>
+          <li class="nav-user__item">
+            <a class="nav-user__link nav-link @@_dark" href="#">Contact Us</a>
+          </li>
+          <li class="nav-user__item">
+            <a class="nav-user__link nav-link @@_dark" href="#">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- /header__top-line -->
+
+    <div class="header__search-line">
+      <form class="header__form-search form-search">
+        <button class="form-search__btn-search box-icon" aria-label="button search">
+          <svg aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+          </svg>
+        </button>
+        <input class="form-search__form-control" id="search-input" type="text">
+        <label class="visually-hidden" for="search-input">Search exam input</label>
+        <button class="form-search__btn-search box-icon" aria-label="button search">
+          <svg aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+    </div><!-- /header__search-line -->
+
+  </div><!-- /container -->
+
+  <div class="header__bottom-line">
+    <div class="header__bottom-line-container container">
+      <nav class="header__nav-main nav-main">
+        <ul class="nav-main__list">
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-main__item _dropdown">
+            <a class="nav-main__link nav-link" href="#">Certifications</a>
+            <nav class="nav-main__subnav subnav">
+              <ul class="subnav__list">
+                @@for(var i = 0; i < 5; i++) {
+                  <li>
+                    <a class="subnav__link nav-link" href="#">11g</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">CISSP</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">VCP6-DCV</a>
+                  </li>
+                }
+              </ul>
+            </nav>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Demo</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Bundles</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">FAQ</a>
+          </li>
+          <li>
+            <a class="nav-main__link nav-link" href="#">Corporate Accounts</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Member Center</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Shopping Cart</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="header__btn-menu box-icon" aria-label="mobile menu">
+        <svg aria-hidden="true">
+          <use xlink:href="./design/images/symbol/sprite.svg#menu"></use>
+        </svg>
+      </button>
+
+    </div><!-- /container -->
+  </div><!-- /header__bottom-lin e-->
+</header>

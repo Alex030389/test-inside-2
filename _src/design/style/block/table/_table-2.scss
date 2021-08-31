@@ -1,0 +1,242 @@
+.table-2 {
+  width: 100%;
+  margin: 0 auto;
+
+  border: 1px solid $c-gray;
+  border-radius: 5px;
+
+  @media (max-width: $md) {
+    border-color: #e6e8eb;
+  }
+
+  &._narrow {
+    max-width: 1047px;
+  }
+}
+
+.table-2__row {
+  position: relative;
+
+  display: flex;
+  padding: 12px 0;
+  flex-wrap: wrap;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+
+    width: calc(100% - 40px);
+    height: 1px;
+
+    background-color: $c-gray;
+
+    @media (max-width: $md) {
+      left: 6px;
+
+      width: calc(100% - 12px);
+
+      background-color: #e6e8eb;
+    }
+  }
+
+  &:first-child {
+    &::after {
+      display: none;
+    }
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+
+  &._head {
+    margin: -1px -1px 0;
+    padding: 16px 0 16px;
+    border-radius: 5px 5px 0 0;
+
+    color: #fff;
+
+    background-color: $c-dark-blue;
+
+    &._lite-blue {
+      background-color: #F7F8F9;
+      color: $c-main;
+    }
+  }
+
+  &._foot {
+    padding: 15px 0;
+  }
+}
+
+.table-2__cell {
+  padding: 10px;
+
+  font-weight: 500;
+  font-size: 15px;
+
+  &:first-child {
+    padding-left: 4%;
+  }
+
+  &:last-child {
+    padding-right: 4%;
+  }
+
+  @media (max-width: $md) {
+    padding: 10px 20px;
+
+    &:first-child {
+      padding-left: 20px;
+    }
+
+    &:last-child {
+      padding-right: 20px;
+    }
+  }
+
+  &._h._order {
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+
+  // your order cell
+  &._product {
+    width: 50%;
+
+    @media (max-width: $sl) {
+      width: 65%;
+    }
+
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+
+  &._qty {
+    width: 15%;
+  }
+
+  &._price {
+    span:first-child {
+      font-size: 20px;
+    }
+
+    @media (max-width: $md) {
+      margin-top: -12px;
+    }
+  }
+
+  &._total {
+    font-weight: 700;
+    font-size: 36px;
+    padding-bottom: 14px;
+    margin-left: auto;
+    margin-right: 10%;
+
+    @media (max-width: $xl) {
+      margin-right: 0;
+    }
+
+    @media (max-width: $md) {
+      font-size: 30px;
+      font-weight: 500;
+      padding-bottom: 10px;
+    }
+  }
+
+  // vendor cell
+  &._code {
+    width: 24%;
+
+    @media (max-width: $xl) {
+      width: 40%;
+    }
+  }
+
+  &._name {
+    width: 76%;
+
+    @media (max-width: $xl) {
+      width: 60%;
+    }
+  }
+
+  // u-products cell
+  &._order {
+    width: 32%;
+
+    @media (max-width: $xl) {
+      width: 34%;
+    }
+
+    @media (max-width: $md) {
+      order: 1;
+      width: 50%;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  &._date {
+    width: 17%;
+
+    @media (max-width: $md) {
+      order: 5;
+      width: 100%;
+      text-align: right;
+    }
+  }
+
+  &._amount {
+    width: 17%;
+
+    @media (max-width: $md) {
+      order: 2;
+      width: 50%;
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+
+  &._view {
+    width: 17%;
+
+    @media (max-width: $md) {
+      order: 3;
+      width: 120px;
+    }
+  }
+
+  &._print {
+    width: 17%;
+
+    @media (max-width: $xl) {
+      width: 15%;
+    }
+
+    @media (max-width: $md) {
+      order: 3;
+      width: calc(100% - 120px);
+    }
+  }
+
+  /// footer cell
+  &._f {
+    width: 100%;
+
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.table-2__name {
+  margin-bottom: 8px;
+
+  font-weight: 700;
+}

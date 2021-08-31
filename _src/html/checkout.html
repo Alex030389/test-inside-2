@@ -1,0 +1,146 @@
+@@include('block/head.html', {title: 'Checkout'})
+@@include('block/header/header-2.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <section>
+    <div class="container">
+      <h1 class="title _md _mb_lg">Review Your Order</h1>
+      <div class="main-box">
+        <!-- //////////////////////////////////////////// cart -->
+        <div class="main-box__content cart">
+
+          <div class="white-box _mb_lg">
+            <div class="table-2">
+              <div class="table-2__row _head _lite-blue">
+                <div class="table-2__cell _h _product">
+                  <span class="title _xs">Your Product List</span>
+                </div>
+                <div class="table-2__cell _h _qty d-md-none">
+                  <span class="title _xs">QTY</span>
+                </div>
+                <div class="table-2__cell _h _price d-md-none">
+                  <span class="title _xs">Price</span>
+                </div>
+              </div><!-- /table-2__row _head -->
+
+              @@for(var i = 0; i < 2; i++) {
+              <div class="table-2__row">
+                <div class="table-2__cell _product">
+                  <span><a class="link" href="#">CompTIA A+ Certification Exam: Core 1</a></span>
+                </div>
+                <div class="table-2__cell _qty d-md-none">
+                  <span><a class="link" href="#">1</a></span>
+                </div>
+                <div class="table-2__cell _price">
+                  <span class="d-none d-md-inline">Price</span> <span>$129</span>
+                </div>
+              </div><!-- /table-2__row -->
+              }
+
+              <div class="table-2__row">
+                <div class="table-2__cell _total">
+                  <span>Total: $129</span>
+                </div>
+              </div><!-- /table-2__row _head -->
+            </div><!-- /table-2 -->
+          </div>
+
+          <form class="white-box billing-form">
+            <h2 class="billing-form__title title _sm">Secure Billing Information</h2>
+            <div class="billing-form__row">
+              <div class="billing-form__col form-group">
+                <label class="form-label _required" for="name">Name on Card</label>
+                <input class="form-control _gray" id="name" type="text">
+              </div>
+              <div class="billing-form__col _empty">
+              </div>
+              <div class="billing-form__col form-group">
+                <label class="form-label _required" for="city">City</label>
+                <input class="form-control _gray" id="city" type="text">
+              </div>
+              <div class="billing-form__col form-group">
+                <label class="form-label _required" for="address">Address</label>
+                <input class="form-control _gray" id="address" type="text">
+              </div>
+              <div class="billing-form__col form-group">
+                <label class="form-label" for="country">Country</label>
+                <select class="form-control" name="vendor" id="country" data-selectric>
+                  <option value="0" selected class="form-control__placeholder">Select country</option>
+                  <option value="1">text 1</option>
+                  <option value="2">text 2</option>
+                  <option value="3">text 3</option>
+                  <option value="4">text 4</option>
+                  <option value="5">text 5</option>
+                  <option value="5">text 5</option>
+                </select>
+              </div>
+              <div class="billing-form__col form-group">
+                <label class="form-label _required" for="state">State/Province</label>
+                <input class="form-control _gray" id="state" type="text">
+              </div>
+              <div class="billing-form__col form-group">
+                <label class="form-label _required" for="email">E-mail address</label>
+                <input class="form-control _gray" id="email" type="text">
+              </div>
+              <div class="billing-form__col form-group">
+                <label class="form-label _required" for="zip">Zip/Postal</label>
+                <input class="form-control _gray" id="zip" type="text">
+              </div>
+            </div><!--/billing-form__row-->
+
+            <h2 class="billing-form__title title _sm">Billing Details</h2>
+            <div class="billing-form__row">
+              <div class="billing-form__col form-group">
+                <label class="form-label _required" for="card-number">Card Number*</label>
+                <input class="form-control _gray" id="card-number" type="text">
+              </div>
+              <div class="billing-form__col form-group _cvv">
+                <label class="form-label _required" for="cvv">Security Code (CVV)</label>
+                <input class="form-control _gray _pr_lg" id="cvv" type="text">
+              </div>
+              <div class="billing-form__col form-group">
+                <label class="form-label" for="exp-date">Expiration Date</label>
+                <select class="form-control _gray" id="exp-date" data-selectric>
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                  <option value="5">05</option>
+                  <option value="5">06</option>
+                </select>
+              </div>
+              <div class="billing-form__col form-group">
+                <label class="form-label _transparent" for="exp-date-2">Expiration Date-2</label>
+                <select class="form-control _gray" id="exp-date-2" data-selectric>
+                  <option value="1">21</option>
+                  <option value="2">22</option>
+                  <option value="3">23</option>
+                  <option value="4">24</option>
+                  <option value="5">25</option>
+                </select>
+              </div>
+              <div class="billing-form__col _text">
+                Your purchase with Test-Insunde is safe and fast. Your products will be available for immediate download after your payment has been received.
+              </div>
+              <div class="billing-form__col _btn">
+                <button class="btn _primary _w-100">Pay Now</button>
+              </div>
+
+            </div><!--/billing-form__row-->
+          </form>
+
+        </div><!-- /main-box__content -->
+
+        @@include('block/aside.html', {class: ''})
+
+      </div><!-- /main-box -->
+    </div><!-- /container -->
+  </section>
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

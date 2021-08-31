@@ -1,0 +1,108 @@
+.agitation {
+  position: relative;
+
+  height: 981px;
+  margin-top: -164px;
+
+  background: url(../images/ui/agitation.jpg) center top no-repeat;
+  background-size: cover;
+
+  @media (max-width: $xl) {
+    margin-top: -139px;
+  }
+
+  @media (max-width: $lg) {
+    height: 813px;
+
+    background-position: 58% top;
+  }
+
+  @media (max-width: $md) {
+    margin-top: -116px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(11, 17, 41, .6);
+  }
+}
+
+.agitation__inner {
+  position: relative;
+  z-index: 10;
+
+  padding-top: 347px;
+
+  @media (max-width: $lg) {
+    padding-top: 338px;
+  }
+}
+
+.agitation__title {
+  width: 100%;
+  max-width: 780px;
+  margin-bottom: 54px;
+
+  @media (max-width: $md) {
+    margin-bottom: 30px;
+  }
+
+
+  @media (max-width: $xs) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.agitation__form {
+  position: relative;
+
+  display: flex;
+  width: 100%;
+  max-width: 913px;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+}
+
+.agitation__form-group {
+  position: relative;
+
+  flex-grow: 1;
+  margin-right: 30px;
+
+  @media (max-width: $md) {
+    margin-right: 0;
+    margin-bottom: 18px;;
+  }
+}
+
+.agitation__box-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+
+  transform: translateY(-50%);
+
+  svg {
+    fill: $c-gray;
+  }
+}
+
+.agitation__form-control {
+  padding-left: 44px;
+}
+
+.agitation__btn {
+  align-self: flex-start;
+}

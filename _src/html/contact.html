@@ -1,0 +1,68 @@
+@@include('block/head.html', {title: 'Contact'})
+@@include('block/header/header.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <section class="section">
+    <div class="container">
+      <h1 class="section__title title _md">Contacts</h1>
+      <div class="main-box">
+        <div class="main-box__content contact">
+          <h2 class="contact__title title _sm">Contact Us by E-mail</h2>
+          <h3>Sales Team</h3>
+          <a class="link _blue" href="#">sales@test-inside.com</a>
+          <p>
+            For Queries on test-inside Products, Product Purchase or Website Please contact sales Team
+          </p>
+
+          <h3>Payment Assistance Center</h3>
+          <a class="link _blue" href="#">billing@test-inside.com</a>
+          <p>
+            If your Credit Card or Debit Card is declining without known reason and you need assistance with Payment
+            Method please contact Payment Assistance Center. Refund related queries should also be referred to this
+            E-mail<br>
+            ID: <a class="link _blue" href="mailto:billing@test-inside.com">billing@test-inside.com</a>
+          </p>
+
+          <h3>Support</h3>
+          <a class="link _blue" href="mailto:support@test-inside.com">support@test-inside.com</a>
+          <p>
+            For Queries related to Product Installation and Login Difficulties</p>
+
+          <h3>Product Assistance Center</h3>
+          <a class="link" href="mailto:info@test-inside.com">info@test-inside.com</a>
+          <p>
+            If you face any issue with regards to the products, questions or doubt any answer choices then please make
+            screen shot of that question and e-mail Product Manager.
+          </p>
+
+          <h3>Complaint Center</h3>
+          <a class="link _blue" href="mailto:complaint@test-inside.com">complaint@test-inside.com</a>
+          <p>
+            If you have any complaints regarding products, customer support staff or website related issues, then please
+            contact our complaint centre.
+          </p>
+          <p>NOTE: Please allow up to 24 hours for us to respond.</p>
+
+          <h3>Mailing Address</h3>
+          <p>
+            Test-Inside.com is owned by Global Simulators Ltd. <br>
+            First Floor, 41 Chalton Street, London, NW1 1JD, United Kingdom.
+          </p>
+
+        </div><!-- /main-box__content -->
+
+        @@include('block/aside.html', {class: ''})
+
+      </div><!-- /main-box -->
+    </div><!-- /container -->
+  </section>
+
+  @@include('block/find-exam.html')
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

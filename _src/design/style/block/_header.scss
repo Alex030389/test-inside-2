@@ -1,0 +1,106 @@
+.header {
+  position: relative;
+  z-index: 100;
+
+  width: 100%;
+}
+
+// /// top-line
+.header__top-line {
+  display: flex;
+  align-items: center;
+  min-height: 84px;
+
+  @media (max-width: $md) {
+    min-height: 61px;
+  }
+}
+
+.header__logo-link {
+  margin-right: auto;
+
+  img {
+    width: 186px;
+
+    @media (max-width: $md) {
+      width: 123px;
+    }
+  }
+}
+
+.header__btn-open-search {
+  position: relative;
+  top: -6px;
+
+  margin-right: 30px;
+
+  svg {
+    transition: .2s;
+
+    fill: $c-white;
+  }
+
+  &._dark {
+    svg {
+      fill: $c-main;
+    }
+  }
+
+  &:hover {
+    svg {
+      fill: $c-accent;
+    }
+  }
+
+  @media (max-width: $xl) {
+    top: 0;
+
+    margin-right: 0;
+  }
+}
+
+.header__nav-user {
+  position: relative;
+  top: -8px;
+
+  @media (max-width: $xl) {
+    display: none;
+  }
+}
+
+// /// search-line
+.header__search-line {
+  display: none;
+}
+
+.header__form-search {
+}
+
+// /// bottom-line
+.header__bottom-line {
+  background-color: $c-dark-blue;
+}
+
+.header__bottom-line-container {
+  @media (max-width: $xl) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 55px;
+  }
+}
+
+.header__nav-main {
+  @media (max-width: $xl) {
+    display: none;
+  }
+}
+
+.header__btn-menu {
+  display: none;
+
+  @media (max-width: $xl) {
+    display: inline-block;
+    margin-left: auto;
+  }
+}

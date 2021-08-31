@@ -1,0 +1,35 @@
+@@include('block/head.html', {title: 'Result'})
+@@include('block/header/header.html', {_dark: '_dark'})
+
+<main class="main">
+  @@include('block/breadcrumbs.html')
+
+  <section class="s-sitemap">
+    <div class="container">
+      <h1 class="s-sitemap__title title _md">Test-Inside Sitemap</h1>
+      <p class="s-sitemap__subtitle title _sm">Tip: The sitemap lists all certification exams from Test-inside database, you can use Ctrl+F to find your exam.</p>
+      <div class="all-exams">
+        <h2 class="all-exams__title title _xs _white">
+          All CompTIA Exams
+        </h2>
+        <ul class="all-exams__list">
+          @@for(var i = 0; i < 30; i++) {
+            <li class="all-exams__item">
+              <a class="all-exams__link link" href="#">050-80-CASECURID01</a>
+            </li>
+            <li class="all-exams__item">
+              <a class="all-exams__link link" href="#">AWS DevOps Engineer Professional</a>
+            </li>
+          }
+        </ul>
+      </div><!-- /all-exams -->
+    </div><!-- /container -->
+  </section>
+
+  @@include('block/find-exam.html')
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

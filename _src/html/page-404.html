@@ -1,0 +1,27 @@
+@@include('block/head.html', {title: 'Home'})
+@@include('block/header/header.html', {_dark: ''})
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// agitation -->
+  <section class="agitation page-404">
+    <div class="container">
+      <div class="agitation__inner page-404__inner">
+        <h1 class="page-404__title title _white">
+          Sorry, the page you want to browse can't be found
+        </h1>
+        <div class="page-404__desc">
+          <p>The page may have been deleted or be unavaliable temporarily or maybe what you input is wrong. Please try the followings:</p>
+          <p>1. Go back to the previous page to check the URL</p>
+          <p>2. Contact us online or leave a message</p>
+          <p>3. Go to the Test-inside <a class="link _blue" href="#">home page</a></p>
+          <p>You can also: Use the search engine in the top page to find out what you are looking for.</p>
+        </div>
+
+      </div><!-- /agitation__inner -->
+    </div><!-- /container -->
+  </section>
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

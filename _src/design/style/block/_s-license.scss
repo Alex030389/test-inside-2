@@ -1,0 +1,37 @@
+.s-license {
+  padding-bottom: 104px;
+
+  @media (max-width: $md) {
+    padding-bottom: 50px;
+  }
+}
+
+.s-license__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px -20px;
+}
+
+.s-license__col {
+  width: calc(25% - 20px);
+  margin: 0 10px 20px;
+
+  @media (max-width: $sl) {
+    width: calc(50% - 20px);
+  }
+
+  @media (max-width: $md) {
+    width: calc(100% - 20px);
+  }
+
+  &._wrap-form {
+    width: calc(100% - 20px);
+    padding-top: 30px;
+  }
+}
+
+.s-license__form {
+  max-width: 1046px;
+  width: 100%;
+  margin: 0 auto;
+}

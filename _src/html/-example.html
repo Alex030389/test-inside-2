@@ -1,0 +1,56 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+
+  @@include('block/breadcrumbs.html')
+
+  <div class="container">
+    <svg aria-hidden="true">
+      <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+    </svg>
+
+    <div style="margin-bottom: 20px;">
+      <button class="btn">button</button>
+      <a class="btn" href="#">button</a>
+    </div>
+    <div>
+      <button class="link">link</button>
+      <a class="link" href="#">link</a>
+    </div>
+    <a class="link" href="#">One</a>
+    <br>
+    <br>
+    <br>
+    <button class="btn _primary">button</button>
+    <br>
+    <br>
+    <div style="background-color: #000;">
+      <br>
+
+      <button class="btn _lite">button</button>
+
+      <br>
+    </div>
+    <br>
+    <br>
+    <a class="btn _primary" href="#">link</a>
+    <a class="btn _lite-blue" href="#">link</a>
+
+    <br>
+    <br>
+    <br>
+    <a class="link" href="#">link</a>
+    <a class="link _blue" href="#">link blue</a>
+
+    <form class="agitation__form" action="#">
+      <input class="agitation__form-control form-control _lite" type="text">
+    </form>
+    <form class="agitation__form" action="#">
+      <input class="agitation__form-control form-control _gray" type="text">
+    </form>
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

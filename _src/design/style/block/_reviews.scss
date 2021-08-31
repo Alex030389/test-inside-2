@@ -1,0 +1,44 @@
+.reviews {
+  position: relative;
+
+  padding: 0 90px;
+
+  @media (max-width: $md) {
+    padding: 0;
+  }
+}
+
+.reviews__swiper-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.reviews__swiper-wrapper {
+  @extend .list-reset;
+
+  margin-bottom: 80px;
+
+  @media (max-width: $md) {
+    margin-bottom: 45px;
+  }
+}
+
+.reviews__swiper-button-next,
+.reviews__swiper-button-prev {
+  top: 40%;
+
+  @media (max-width: $md) {
+    display: none;
+  }
+}
+
+.reviews__swiper-button-prev {
+  left: 0;
+}
+
+.reviews__swiper-button-next {
+  right: 0;
+}
+
+.reviews__swiper-pagination {
+}

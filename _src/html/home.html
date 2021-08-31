@@ -1,0 +1,193 @@
+@@include('block/head.html', {title: 'Home'})
+@@include('block/header/header.html', {_dark: ''})
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// agitation -->
+  <section class="agitation">
+    <div class="container">
+      <div class="agitation__inner">
+        <h1 class="agitation__title title _white">
+          Pass Your<br>
+          Certification Exams<br>
+          with Test-Inside
+        </h1>
+        <form class="agitation__form" action="#" data-agitation-form>
+
+          <div class="agitation__form-group">
+            <div class="agitation__box-icon box-icon">
+              <svg aria-hidden="true">
+                <use xlink:href="./design/images/symbol/sprite.svg#search"></use>
+              </svg>
+            </div>
+            <input class="agitation__form-control form-control _lg _lite" data-agitation-form-control placeholder="Search" name="search" type="text">
+          </div><!-- agitation__form-group -->
+          <button class="agitation__btn btn _lite">Find Your Exam</button>
+        </form>
+      </div><!-- /agitation__inner -->
+
+    </div><!--/container-->
+  </section>
+
+  <!-- /////////////////////////////////////////////////////// top vendors -->
+  <section class="top-v">
+    <div class="container">
+      <div class="box-v">
+        <h2 class="top-v__title title _md _ta_center">Top Vendors</h2>
+        <div class="box-v__inner">
+          @@for(var i = 0; i < 12; i++) {
+            <a class="box-v__link" href="#">
+              <img class="box-v__img" src="./design/images/vendor-logo/microsoft.png" alt="img">
+            </a>
+          }
+        </div><!-- /box-v__inner -->
+      </div><!-- /box-v -->
+      <div class="top-v__wrap-btn">
+        <a class="btn _primary" href="#">See More</a>
+      </div>
+    </div><!-- /container -->
+  </section>
+
+  <!-- /////////////////////////////////////////////////////// top certifications -->
+  <section class="top-c">
+    <div class="container">
+      <div class="top-c__box-title-link">
+        <h2 class="top-c__title title _md _ta_center">Top Certifications</h2>
+        <div class="top-c__wrap-link d-lg-none">
+          <a class="top-c__link link _blue" href="#">See More</a>
+        </div>
+      </div>
+      <div class="box-c">
+        <div class="box-c__inner">
+          <a class="box-c__link _c_2" href="#">
+            <div class="box-c__wrap-img">
+              <img class="box-c__img" src="./design/images/vendor-logo/download.png" alt="img">
+            </div>
+            <div class="box-c__title">CompTIA Security+</div>
+          </a>
+          @@for(var i = 0; i < 17; i++) {
+            <a class="box-c__link _c_2" href="#">
+              <div class="box-c__wrap-img">
+                <img class="box-c__img" src="./design/images/vendor-logo/comptia.png" alt="img">
+              </div>
+              <div class="box-c__title">CompTIA Security+</div>
+            </a>
+          }
+        </div><!-- /box-c__inner -->
+      </div><!-- /box-c -->
+      <div class="top-c__wrap-link d-none d-lg-block">
+        <a class="top-c__link link _blue" href="#">See More</a>
+      </div>
+    </div><!-- /container -->
+  </section>
+
+  <!-- /////////////////////////////////////////////////////// benefits -->
+  <section class="benefits">
+    <div class="container">
+      <div class="benefits__desc-box">
+        <h2 class="benefits__title title _md _white">Benefits</h2>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            5 Years experience with <b>Almost 50,000 Satisified Customers</b>
+          </li>
+          <li class="benefits__item">
+            <b>Free updates</b>: To ensure that you always get most updated questions, we provide 90 days of updates absolutely free!
+          </li>
+          <li class="benefits__item">
+            Instant download after purchase, <b>with 24/7 Customer Support</b>.
+          </li>
+          <li class="benefits__item">
+            Questions & Answers are <b>based on real exam questions</b>, formatted questions and accurate answers provided by experts!
+          </li>
+          <li class="benefits__item">
+            <b>Real exam environment testing engine</b>, covers drag and drop, simulations, type in questions - train yourself for the real exam!
+          </li>
+        </ul>
+      </div><!-- /benefits__desc-box -->
+      <!-- <div class="benefits__img-box">
+        ./design/images/ui/agitation-2.jpg
+        <img src="" alt="img">
+      </div> -->
+    </div>
+  </section>
+
+  <!-- /////////////////////////////////////////////////////// tabs -->
+  <section class="s-tabs">
+    <div class="container">
+      <div class="tabs">
+        <div class="tabs__box-btn">
+          <button class="tabs__btn _active">Top Exams</button>
+          <button class="tabs__btn">Recent Updates</button>
+        </div><!-- .tabs__box-btn -->
+
+        <div class="tabs__box-content">
+          <div class="tabs__content _active">
+            <div class="table">
+              <div class="table__row _head">
+                <div class="table__cell _vendor _h">Vendor</div>
+                <div class="table__cell _exam _h">Exam</div>
+                <div class="table__cell _rank _h">Rank</div>
+              </div><!-- /table__row _head -->
+
+              @@for(var i = 0; i < 10; i++) {
+                <div class="table__row">
+                  <div class="table__cell _vendor">
+                    <a class="link" href="#">Microsoft</a>
+                  </div>
+                  <div class="table__cell _exam">
+                    <a class="link" href="#">AZ-104</a>
+                  </div>
+                  <div class="table__cell _rank">
+                    1
+                  </div>
+                </div><!-- /table__row -->
+              }
+
+              <div class="table__row _foot">
+                <div class="table__cell _f">
+                  <a class="link _blue" href="#">View All</a>
+                </div>
+              </div><!-- /table__row _foot -->
+            </div><!-- /table -->
+          </div><!-- /tabs__content -->
+
+          <div class="tabs__content">
+            <div class="table">
+              <div class="table__row _head">
+                <div class="table__cell _vendor _h">Vendor</div>
+                <div class="table__cell _exam _h">Exam</div>
+                <div class="table__cell _rank _h">Rank</div>
+              </div><!-- /table__row _head -->
+
+              @@for(var i = 0; i < 10; i++) {
+                <div class="table__row">
+                  <div class="table__cell _vendor">
+                    <a class="link" href="#">Cisco</a>
+                  </div>
+                  <div class="table__cell _exam">
+                    <a class="link" href="#">XT-300</a>
+                  </div>
+                  <div class="table__cell _rank">
+                    2
+                  </div>
+                </div><!-- /table__row -->
+              }
+
+              <div class="table__row _foot">
+                <div class="table__cell _f">
+                  <a class="link _blue" href="#">View All</a>
+                </div>
+              </div><!-- /table__row _foot -->
+            </div><!-- /table -->
+          </div><!-- /tabs__content -->
+        </div><!-- /tabs__box-content -->
+      </div><!-- /tabs -->
+    </div><!-- /container -->
+  </section>
+
+  @@include('block/find-exam.html')
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

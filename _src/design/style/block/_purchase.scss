@@ -1,0 +1,46 @@
+.purchase {
+  background: $c-dark-blue;
+  border-radius: 5px;
+  padding: 64px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.purchase__title.title {
+  color: $c-white;
+  text-align: center;
+  margin-bottom: 82px;
+
+  @media (max-width: $sl) {
+    font-size: 38px;
+  }
+}
+
+.purchase__price {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 43px;
+}
+
+.purchase__old-price {
+  color: $c-white;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.purchase__new-price {
+  font-size: 36px;
+  font-weight: 700;
+  color: $c-white;
+  text-align: center;
+
+  @media (max-width: $sl) {
+    font-size: 26px;
+  }
+}
+
+.purchase__btn {
+  max-width: 335px;
+}
