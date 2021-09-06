@@ -5,8 +5,23 @@
     margin-bottom: 0;
   }
 
+  h2 {
+    @extend .title;
+    @extend ._sm;
+
+    margin-bottom: 30px;
+  }
+
   p {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
+
+    & + h2 {
+      padding-top: 10px;
+    }
+  }
+
+  ul, ol {
+    margin-bottom: 30px;
   }
 
   a {

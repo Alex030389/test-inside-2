@@ -1,0 +1,28 @@
+.promo-code {
+  display: flex;
+  width: 100%;
+  padding-right: 30px;
+
+  @media (max-width: $md) {
+    padding-right: 0;
+  }
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+  }
+}
+
+.promo-code__form-group {
+  margin-right: 30px;
+  flex-grow: 1;
+
+  @media (max-width: $sm) {
+    margin: 0 0 15px;
+  }
+}
+
+.promo-code__btn {
+  padding: 13px;
+  align-self: flex-end;
+  max-width: 190px;
+}

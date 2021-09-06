@@ -7,13 +7,13 @@
 
   line-height: 1.75;
 
-  background: url(../images/icon/check-dark.svg) 4px center no-repeat;
+  background: url(../images/icon/check-dark.svg) 4px 0 no-repeat;
 
 
   @media (max-width: $md) {
     padding-left: 50px;
 
-    background: url(../images/icon/check-dark.svg) 0 center no-repeat;
+    background: url(../images/icon/check-dark.svg) 0 0 no-repeat;
   }
 
   &:not(:last-child) {
@@ -24,6 +24,10 @@
     }
   }
 
+  &._check-blue {
+    background-image: url(../images/icon/check-blue.svg);
+  }
+
   &._mb {
     &_sm {
       &:not(:last-child) {
@@ -32,6 +36,14 @@
         @media (max-width: $md) {
           margin-bottom: 14px;
         }
+      }
+    }
+
+    &_ss {
+      padding-left: 48px;
+
+      &:not(:last-child) {
+        margin-bottom: 14px;
       }
     }
   }

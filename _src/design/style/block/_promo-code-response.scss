@@ -1,0 +1,12 @@
+.promo-code-response {
+  font-size: 18px;
+  color: $c-accent;
+  text-align: right;
+
+  &._error {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: red;
+    text-align: left;
+  }
+}

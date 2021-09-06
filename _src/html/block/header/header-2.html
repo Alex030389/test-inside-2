@@ -2,13 +2,22 @@
   <div class="container">
     <div class="header__top-line">
       <a class="header__logo-link" href="#">
-        <img src="./design/images/logo/logo-dark.svg" alt="img" width="186" height="61">
+        <img src="./design/images/logo/logo-dark.svg" alt="img" width="186" height="61" data-header-logo>
       </a>
-      <button class="header__btn-open-search @@_dark box-icon" aria-label="button open search input">
-        <svg aria-hidden="true">
-          <use xlink:href="./design/images/symbol/sprite.svg#search"></use>
-        </svg>
-      </button>
+
+      <form class="header__search-form" action="#" data-search-form>
+        <button type="button" class="header__open-search @@_dark box-icon" aria-label="button open search input" data-open-search>
+          <svg aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <input class="header__search-control @@_dark" type="text" name="search-text" data-search-control disabled>
+        <button type="button" class="header__close-search @@_dark box-icon" data-close-search>
+          <svg aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </form>
 
       <nav class="header__nav-user nav-user">
         <ul class="nav-user__list">
@@ -24,23 +33,6 @@
         </ul>
       </nav>
     </div><!-- /header__top-line -->
-
-    <div class="header__search-line">
-      <form class="header__form-search form-search">
-        <button class="form-search__btn-search box-icon" aria-label="button search">
-          <svg aria-hidden="true">
-            <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
-          </svg>
-        </button>
-        <input class="form-search__form-control" id="search-input" type="text">
-        <label class="visually-hidden" for="search-input">Search exam input</label>
-        <button class="form-search__btn-search box-icon" aria-label="button search">
-          <svg aria-hidden="true">
-            <use xlink:href="./design/images/symbol/sprite.svg#search"></use>
-          </svg>
-        </button>
-      </form>
-    </div><!-- /header__search-line -->
 
   </div><!-- /container -->
 

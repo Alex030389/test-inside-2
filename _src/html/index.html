@@ -4,7 +4,10 @@
   <h1>Test-Inside</h1>
   <hr>
   <h2>MODALS</h2>
-  <button style="margin: 8px" data-btn="modal" data-mfp-src="#modal-1">modal</button>
+  <button style="margin: 8px" data-btn="modal" data-mfp-src="#m-get-discount">get discount</button>
+  <button style="margin: 8px" data-btn="modal" data-mfp-src="#m-instant-discount">instant discount</button>
+  <button style="margin: 8px" data-btn="modal" data-mfp-src="#m-download-free">download free</button>
+  <button style="margin: 8px" data-btn="modal" data-mfp-src="#m-purchase-help">purchase help</button>
   <hr>
 
   <h2>PAGES</h2><!------------------------------------------->
@@ -58,9 +61,11 @@
       <a href="result.html">Search Results</a>
     </li>
     <li>
+      <a href="guarantee.html">Guarantee (About Us,  Privacy, Terms and Conditions)</a>
+    </li>
+    <li>
       <a href="page-404.html">404</a>
     </li>
-    <li>About Us, Guarantee, Privacy, Terms and Conditions</li>
   </ol>
   <hr>
 
@@ -102,5 +107,8 @@
   <hr>
 </div>
 
-@@include('block/modal/modal-1.html')
+@@include('block/modal/m-get-discount.html')
+@@include('block/modal/m-instant-discount.html')
+@@include('block/modal/m-download-free.html')
+@@include('block/modal/m-purchase-help.html')
 @@include('block/scripts.html')

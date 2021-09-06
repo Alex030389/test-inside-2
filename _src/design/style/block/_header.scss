@@ -9,10 +9,10 @@
 .header__top-line {
   display: flex;
   align-items: center;
-  min-height: 84px;
+  height: 84px;
 
   @media (max-width: $md) {
-    min-height: 61px;
+    height: 61px;
   }
 }
 
@@ -28,11 +28,32 @@
   }
 }
 
-.header__btn-open-search {
-  position: relative;
-  top: -6px;
-
+// header search
+.header__search-form {
   margin-right: 30px;
+  top: -6px;
+  position: relative;
+
+  @media (max-width: $xl) {
+    top: 0;
+    margin-right: 0;
+  }
+
+  &._active {
+    @media (max-width: $sm) {
+      margin: 0 auto;
+    }
+
+    @media (max-width: $ss) {
+      width: 100%;
+    }
+  }
+}
+
+.header__open-search,
+.header__close-search {
+  position: absolute;
+  top: 4px;
 
   svg {
     transition: .2s;
@@ -46,19 +67,75 @@
     }
   }
 
-  &:hover {
-    svg {
-      fill: $c-accent;
-    }
+  //&:hover {
+  //  svg {
+  //    fill: $c-accent;
+  //  }
+  //}
+}
+
+.header__open-search {
+  left: 5px;
+}
+
+.header__close-search {
+  right: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+
+  @media (max-width: $sm) {
+    transition: none;
   }
 
-  @media (max-width: $xl) {
-    top: 0;
-
-    margin-right: 0;
+  &._active {
+    visibility: visible;
+    opacity: 1;
   }
 }
 
+.header__search-control {
+  background: transparent;
+  border-radius: 5px;
+  height: 38px;
+  padding: 6px 0;
+  width: 38px;
+  border: 1px solid transparent;
+  transition: .3s;
+  color: $c-white;
+
+  @media (max-width: $sm) {
+    transition: none;
+  }
+
+  &:-webkit-autofill {
+    box-shadow: 0 0 100px transparent inset;
+
+    -webkit-text-fill-color: currentColor;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &._active {
+    border-color: $c-white;
+    width: 330px;
+    padding-left: 36px;
+    padding-right: 36px;
+
+    &._dark {
+      border-color: $c-main;
+      color: $c-main;
+    }
+
+    @media (max-width: $ss) {
+      width: 100%;
+    }
+  }
+}
+
+// nav user
 .header__nav-user {
   position: relative;
   top: -8px;
@@ -66,14 +143,6 @@
   @media (max-width: $xl) {
     display: none;
   }
-}
-
-// /// search-line
-.header__search-line {
-  display: none;
-}
-
-.header__form-search {
 }
 
 // /// bottom-line

@@ -1,30 +1,30 @@
 (() => { // ///////////////////////////////////////// menu
 
-  if(document.querySelector('[data-js="btn-hamburger"]')) {
-    const btnHamburger = document.querySelector('[data-js="btn-hamburger"]');
-    const mNav = document.querySelector('[data-js="m-nav"]');
-    const mNavBox = document.querySelector('[data-js="m-nav-box"]');
+  if(document.querySelector('[data-btn-open-menu]')) {
+    const btnOpenMenu = document.querySelector('[data-btn-open-menu]');
+    const mNav = document.querySelector('[data-m-nav]');
+    const mNavBox = document.querySelector('[data-m-nav-box]');
     const body = document.querySelector('body');
-    const btnCloseNav = document.querySelector('[data-js="m-nav-btn-close"]');
+    const btnCloseNav = document.querySelector('[data-btn-close-menu]');
 
     const openMNav = () => {
       body.classList.add('fixed');
-      mNav.classList.add('m-nav--active');
-      mNavBox.classList.add('m-nav__box--active');
+      mNav.classList.add('_active');
+      mNavBox.classList.add('_active');
     };
 
     const closeMNav = () => {
       body.classList.remove('fixed');
-      mNav.classList.remove('m-nav--active');
-      mNavBox.classList.remove('m-nav__box--active');
+      mNav.classList.remove('_active');
+      mNavBox.classList.remove('_active');
     };
 
-    btnHamburger.addEventListener('click', () => {
+    btnOpenMenu.addEventListener('click', () => {
       openMNav();
     });
 
     mNav.addEventListener('click', (evt) => {
-      if(evt.target === mNav) { closeMNav() };
+      if(evt.target === mNav) { closeMNav() }
     });
 
     btnCloseNav.addEventListener('click', () => {

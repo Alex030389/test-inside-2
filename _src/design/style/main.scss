@@ -34,7 +34,7 @@
 @import "block/form/form-label";
 @import "block/form/form-control";
 @import "block/form/form-captcha";
-//@import "block/form/form-search";
+@import "block/form/form-info";
 
 // table
 @import "block/table/table";
@@ -46,12 +46,12 @@
 @import "block/swiper/swiper-pagination";
 
 // ather
-@import "block/section/section-2";
 @import "block/container";
 @import "block/main-box";
 @import "block/about-text";
 @import "block/content-text";
 @import "block/header";
+@import "block/m-nav";
 @import "block/logo";
 @import "block/breadcrumbs";
 @import "block/box-icon";
@@ -104,6 +104,8 @@
 @import "block/step";
 @import "block/support";
 @import "block/s-thankyou";
+@import "block/promo-code";
+@import "block/promo-code-response";
 
 @import "block/page-404";
 
