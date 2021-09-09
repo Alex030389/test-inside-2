@@ -202,3 +202,9 @@
     }
   }
 }
+
+.selectric-below .selectric-items,
+.selectric-above .selectric-items {
+  bottom: auto !important;
+  top: calc(100% + 5px) !important;
+}

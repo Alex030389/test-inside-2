@@ -42,6 +42,10 @@
   width: 100%;
   max-width: 439px;
   margin: 0 auto;
+  
+  @media (max-width: $sm) {
+    max-width: 100%;
+  }
 }
 
 .find-exam__form-group {

@@ -312,19 +312,16 @@
   font-weight: 700;
 }
 
-.table-2__subtotal,
-.table-2__discount{
-  font-size: 20px;
-  font-weight: 700;
+.table-2__subtotal {
   color: #6c757d;
-
-  @media (max-width: $md) {
-    font-weight: 500;
-  }
+  margin-bottom: 8px;
+  font-size: 20px;
 }
 
 .table-2__discount {
   color: $c-accent;
+  margin-bottom: 16px;
+  font-size: 20px;
 }
 
 .table-2__total {
@@ -368,7 +365,7 @@
   max-width: 216px;
 
   @media (max-width: $md) {
-    max-width: 250px;
+    max-width: 100%;
     padding-bottom: 15px;
   }
 }

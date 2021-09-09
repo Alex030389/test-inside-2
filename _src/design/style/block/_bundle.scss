@@ -11,6 +11,14 @@
   @media (max-width: $sm) {
     margin-bottom: 15px;
   }
+
+  br {
+    display: none;
+
+    @media (max-width: $sm) {
+      display: block;
+    }
+  }
 }
 
 .bundle__foot {

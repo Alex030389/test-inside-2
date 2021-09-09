@@ -76,6 +76,20 @@ $w-s-prod-main: 100% / 1580px * 1066px; /* var */
   }
 }
 
+.s-prod__item {
+  margin-bottom: 22px !important;
+
+  @media (max-width: $md) {
+    margin-bottom: 14px !important;
+  }
+}
+
+.s-prod__item-faq {
+  @media (max-width: $md) {
+    padding-top: 8px;
+  }
+}
+
 .s-prod__sidebox {
   width: 100% - $w-s-prod-main;
 

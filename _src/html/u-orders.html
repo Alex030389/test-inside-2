@@ -1,5 +1,5 @@
 @@include('block/head.html', {title: 'Orders / Invoices'})
-@@include('block/header/header.html', {_dark: '_dark'})
+@@include('block/header/header.html', {_dark: '_dark', logo: 'logo-dark'})
 
 <main class="main">
   @@include('block/breadcrumbs.html')
@@ -35,7 +35,7 @@
             @@for(var i = 0; i < 10; i++) {
             <div class="table-2__row">
               <div class="table-2__cell _order">
-                <span><a class="link _blue" href="#">94879</a></span>
+                <span><a class="link" href="#">94879</a></span>
               </div>
               <div class="table-2__cell _date">
                 <span>Jul 11,21</span>

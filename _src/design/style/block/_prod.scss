@@ -77,6 +77,10 @@ $w-prod-wrap-img: 48%; /* var */
   @media (max-width: $lg) {
     margin: 0 auto;
   }
+
+  @media (max-width: $sm) {
+    max-width: 100%;
+  }
 }
 
 .prod__price {

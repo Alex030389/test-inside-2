@@ -30,9 +30,9 @@
 
 // header search
 .header__search-form {
-  margin-right: 30px;
-  top: -6px;
   position: relative;
+  top: -6px;
+  margin-right: 30px;
 
   @media (max-width: $xl) {
     top: 0;
@@ -40,13 +40,6 @@
   }
 
   &._active {
-    @media (max-width: $sm) {
-      margin: 0 auto;
-    }
-
-    @media (max-width: $ss) {
-      width: 100%;
-    }
   }
 }
 
@@ -66,12 +59,6 @@
       fill: $c-main;
     }
   }
-
-  //&:hover {
-  //  svg {
-  //    fill: $c-accent;
-  //  }
-  //}
 }
 
 .header__open-search {
@@ -104,9 +91,9 @@
   transition: .3s;
   color: $c-white;
 
-  @media (max-width: $sm) {
-    transition: none;
-  }
+  //@media (max-width: $sm) {
+  //  transition: none;
+  //}
 
   &:-webkit-autofill {
     box-shadow: 0 0 100px transparent inset;
@@ -124,13 +111,21 @@
     padding-left: 36px;
     padding-right: 36px;
 
-    &._dark {
-      border-color: $c-main;
-      color: $c-main;
+    @media (max-width: $sm) {
+      width: 230px;
+    }
+
+    @media (max-width: $xs) {
+      width: 190px;
     }
 
     @media (max-width: $ss) {
-      width: 100%;
+      width: 140px;
+    }
+
+    &._dark {
+      border-color: $c-main;
+      color: $c-main;
     }
   }
 }

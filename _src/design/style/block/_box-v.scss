@@ -34,12 +34,12 @@
   @media (max-width: $sm) {
     height: 119px;
 
-    border-radius: 14px;
+    border-radius: 10px;
   }
 
   &:hover {
     text-decoration: none;
-
+    border-color: $c-white;
     background-color: #fff;
     box-shadow: 0 25px 50px rgba(8, 18, 44, .16);
   }

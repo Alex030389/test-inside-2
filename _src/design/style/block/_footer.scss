@@ -52,7 +52,7 @@
   flex-wrap: wrap;
   margin: 0 -10px;
 
-  @media (max-width: $xs) {
+  @media (max-width: $sm) {
     flex-direction: column;
   }
 }

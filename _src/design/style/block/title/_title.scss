@@ -50,6 +50,14 @@
     margin-bottom: 0;
   }
 
+  &._mb_sm {
+    margin-bottom: 30px;
+
+    @media (max-width: $md) {
+      margin-bottom: 25px;
+    }
+  }
+
   &._mb_md {
     margin-bottom: 50px;
 

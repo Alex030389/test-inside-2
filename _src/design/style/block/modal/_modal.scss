@@ -136,6 +136,10 @@
   margin-bottom: 12px;
   max-width: 411px;
 
+  @media (max-width: $sm) {
+    max-width: 100%;
+  }
+
   &._mb-lg {
     &_lg {
       @media (max-width: $lg) {

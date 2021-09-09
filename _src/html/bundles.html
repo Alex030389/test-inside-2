@@ -1,12 +1,12 @@
 @@include('block/head.html', {title: 'Bundles'})
-@@include('block/header/header.html', {_dark: '_dark'})
+@@include('block/header/header.html', {_dark: '_dark', logo: 'logo-dark'})
 
 <main class="main">
   @@include('block/breadcrumbs.html')
 
-  <section class="section">
+  <section>
     <div class="container">
-      <h1 class="section__title title _md">Certification Bundles</h1>
+      <h1 class="title _md _mb_sm">Certification Bundles</h1>
       <div class="main-box">
         <div class="main-box__content bundles">
             @@for(var i = 0; i < 2; i++) {
@@ -15,8 +15,8 @@
                 @@for(var i = 0; i < 6; i++) {
                   <li class="bundles__item bundle">
                     <p class="bundle__head">
-                      <a class="link _blue" href="#">CompTIA CASP</a> - (CompTIA Exams: <a class="link _blue" href="#">CAS-003</a> )<br>
-                      (1 products total)
+                      <a class="link _blue" href="#">CompTIA CASP</a> - (CompTIA Exams:<br> <a class="link _blue" href="#">CAS-003</a> )
+                      (1&nbsp;products total)
                     </p>
                     <div class="bundle__foot">
                       <div class="bundle__box-include-price">
